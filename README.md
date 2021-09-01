@@ -85,4 +85,4 @@
   - Tablet
     - [Wireframes for tablets.](readme-images/wireframes/tabletwireframe.png)
   - Desktop
-    - [Wireframes for desktops.](readme-images/wireframes/)
+    - [Wireframes for desktops.](readme-images/wireframes/desktopwireframe.png)
