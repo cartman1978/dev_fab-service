@@ -128,3 +128,13 @@
   - The database diagram shows a list of items in each object and relationships between each object.
 
     <div align="center"><img src="readme-images/page-images/db-diagram.png" alt="image of the database diagram"></div>
+
+### Design
+
+- #### Colour scheme
+
+  - My Colour scheme was inspired by my main hero image matching the navy background within the image to be used for the navigation and text colour.
+  - I then pick two violet colours for the main background, I decide to use strong colours to create a softer effect.
+ 
+
+    - <p align="center"><img src="readme-images/design/colors.png" alt="Image of colour scheme" height="200px" width="350px"/></p>
