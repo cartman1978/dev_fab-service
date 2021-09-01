@@ -75,3 +75,14 @@
   - As the business owner, I would like to be able to delete products.
   - As the business owner, I would like to have access to an admin section. 
   - As the business owner, I would like my customers to be able to shop on the site easily.
+
+  ### WireFrames
+
+- I've created WireFrames using Balsamiq and have included the links to access them.
+
+  - Phone
+    - [Wireframes for phones.](readme-images/wireframes/mobilewireframe.jpg)
+  - Tablet
+    - [Wireframes for tablets.](readme-images/wireframes/milestone4-tablet-wireframes.pdf)
+  - Desktop
+    - [Wireframes for desktops.](readme-images/wireframes/milestone4-desktop-wireframes.pdf)
