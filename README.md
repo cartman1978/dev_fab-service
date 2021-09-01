@@ -83,6 +83,6 @@
   - Phone
     - [Wireframes for phones.](readme-images/wireframes/mobilewireframe.jpg)
   - Tablet
-    - [Wireframes for tablets.](readme-images/wireframes/milestone4-tablet-wireframes.pdf)
+    - [Wireframes for tablets.](readme-images/wireframes/tabletwireframe.png)
   - Desktop
-    - [Wireframes for desktops.](readme-images/wireframes/milestone4-desktop-wireframes.pdf)
+    - [Wireframes for desktops.](readme-images/wireframes/)
