@@ -86,3 +86,45 @@
     - [Wireframes for tablets.](readme-images/wireframes/tabletwireframe.png)
   - Desktop
     - [Wireframes for desktops.](readme-images/wireframes/desktopwireframe.png)
+
+    ### Database models and schema
+
+- #### Models
+- Users
+  - User
+    - From Django Allauth containing the username, email, and password.
+  - Userprofile
+    - Model containing the user's details for future orders.
+  - Wishlist
+    - Contains a list of items that the user has liked.
+
+- Service
+  - Items
+    - Contains the service information for each product item.
+  - Categories
+    - The categories for the service items.
+
+- Customer details.
+  - Newsletter Subscribers
+    - Contains the email of users who have signed up for the newsletter.
+  - Messages.
+    - Contains the details of the messages from the contact form.
+
+- Shop
+  - Order
+    - Contains details of the customer's orders, their details, and the items they've ordered.
+  - Orderline item
+    - Items for the customer order the quantity and total.
+
+- Blog
+  - Post
+    - Contains the blog post and details of its author and title.
+  - Comments
+    - Contains the comments for each post.
+
+
+- Database Diagram
+
+  - The database diagram shows a list of items in each object and relationships between each object.
+
+    <div align="center"><img src="readme-images/page-images/db-diagram.png" alt="image of the database diagram"></div>
