@@ -138,3 +138,10 @@
  
 
     - <p align="center"><img src="readme-images/design/colors.png" alt="Image of colour scheme" height="200px" width="350px"/></p>
+
+    - #### Typography
+
+  - I've chosen the IBM Plex Sans font from google fonts for my site.
+  - I've used the one font throughout the website to keep the design consistent.
+  - I then used different font weights to add more emphasis to some text, such as headings. 
+    - <p align="center"><img src="readme-images/design/googlefonts.jpg" alt="Image of google font" height="200px" width="300px"/></p>
