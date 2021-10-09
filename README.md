@@ -145,3 +145,9 @@
   - I've used the one font throughout the website to keep the design consistent.
   - I then used different font weights to add more emphasis to some text, such as headings. 
     - <p align="center"><img src="readme-images/design/googlefonts.jpg" alt="Image of google font" height="200px" width="300px"/></p>
+
+- #### Images 
+
+  - The majority of images I have used were obtained from Unsplash.
+  - I've used three main hero images on the landing page to give the site a cool appearance upon opening.
+  - I then found images of web service items  which I used to create my stock items for the e-commerce part of the site.    
