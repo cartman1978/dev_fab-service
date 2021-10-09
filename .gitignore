@@ -6,3 +6,8 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
+*.sqlite3
+*.pyc 
+__pycache__
+
+
