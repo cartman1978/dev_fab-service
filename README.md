@@ -151,3 +151,7 @@
   - The majority of images I have used were obtained from Unsplash.
   - I've used three main hero images on the landing page to give the site a cool appearance upon opening.
   - I then found images of web service items  which I used to create my stock items for the e-commerce part of the site.    
+
+- #### Icons 
+  - I've used icons in this project for the navigation on mobile sites and the social media links in the footer.
+  - All icons have been obtained from Font Awsome.
