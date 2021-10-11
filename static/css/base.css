@@ -19,7 +19,8 @@ body {
 .heading {
     color: #fff;
     position: absolute;
-    top: 10rem;
+    top: 18rem;
+    right: 2rem;
 }
 
 .box-service-1 {
