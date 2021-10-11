@@ -5,6 +5,7 @@ html {
 
 body {
     background-color: #190E5F;
+    min-height: 100vh;
 }
 
 .title {
