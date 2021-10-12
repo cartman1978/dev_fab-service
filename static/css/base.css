@@ -19,34 +19,108 @@ body {
     margin-top: 4rem;
 }
 
-.test {
-    background: url('/media/bg-mp4.jpg') no-repeat center center fixed;
-}
 
 .box-service-1 {
     background-color: #F3812F;
-    height: 14rem;
+    height: 25rem;
     margin-top: 25rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.box-service-1::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#60d02c, #582DD2);
+    animation: animate 4s linear infinite;
+}
+
+.box-service-1::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #F3812F;
+    border-radius: 16px;
+}
+
+.box-service-2::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#60d02c, #582DD2);
+    animation: animate 4s linear infinite;
+}
+
+.box-service-2::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #D02C75;
+    border-radius: 16px;
+}
+
+@keyframes animate 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box-service-1 .service {
+    position: relative;
+    z-index: 10;
+}
+
+.box-service-2 .service {
+    position: relative;
+    z-index: 10;
 }
 
 .box-service-2 {
     background-color: #D02C75;
-    height: 14rem;
+    height: 25rem;
     margin-top: 16rem;
-    
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .box-service-3 {
     background-color: #582DD2;
-    height: 14rem;
+    height: 25rem;
     margin-top: 24rem;
-   
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .box-service-4 {
     background-color: #F3812F;
-    height: 14rem;
+    height: 25rem;
     margin-top: 11rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
     
 }
 
