@@ -66,6 +66,42 @@ body {
     border-radius: 16px;
 }
 
+.box-service-3::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#60d02c, #F3812F);
+    animation: animate 4s linear infinite;
+}
+
+.box-service-3::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #582DD2;
+    border-radius: 16px;
+}
+
+.box-service-4::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #F3812F;
+    border-radius: 16px;
+}
+
+.box-service-4::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#60d02c, #582DD2);
+    animation: animate 4s linear infinite;
+}
+
+
+
 @keyframes animate 
 {
     0% 
@@ -84,6 +120,16 @@ body {
 }
 
 .box-service-2 .service {
+    position: relative;
+    z-index: 10;
+}
+
+.box-service-3 .service {
+    position: relative;
+    z-index: 10;
+}
+
+.box-service-4 .service {
     position: relative;
     z-index: 10;
 }
@@ -121,7 +167,7 @@ body {
     display: flex;
     overflow: hidden;
     border-radius: 20px;
-    
+    position: relative;  
 }
 
 .service {
