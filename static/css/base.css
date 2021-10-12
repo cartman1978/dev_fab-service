@@ -6,6 +6,7 @@ html {
 body {
     background-color: #190E5F;
     min-height: 100vh;
+    
 }
 
 .title {
@@ -16,6 +17,10 @@ body {
 .heading {
     color: #fff;
     margin-top: 4rem;
+}
+
+.test {
+    background: url('/media/bg-mp4.jpg') no-repeat center center fixed;
 }
 
 .box-service-1 {
