@@ -96,7 +96,7 @@ body {
     position: absolute;
     width: 150px;
     height: 140%;
-    background: linear-gradient(#60d02c, #582DD2);
+    background: linear-gradient(#D02C75, #582DD2);
     animation: animate 4s linear infinite;
 }
 

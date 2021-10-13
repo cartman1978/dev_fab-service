@@ -18,6 +18,8 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     {% block extra_css %}
     {% endblock %}
@@ -33,6 +35,52 @@
 
     <title>Devfab {% block extra_title %}{% endblock %}</title>
   </head>
+
+  <header>
+    <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="top-navigation flex-row-between">
+              <button class="hamburger" aria-haspopup="true" aria-expanded="false" aria-label="open navigation">
+                <span class="line first" aria-hidden="true"></span>
+                <span class="line second" aria-hidden="true"></span>
+                <span class="line third" aria-hidden="true"></span>
+              </button>
+              <a href="{% url 'home' %}" class="logo-text-shadow">Dev_Fab</a>
+              <ul>
+                <li class="d-none d-md-block">
+                  <a href="" class="top-nav-item">Wishlist</a>
+                </li>
+                <li class="top-nav-item d-md-none">
+                  <a href="">
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <span class="visually-hidden">Go to wishlist</span>
+                  </a>
+                </li>
+                <li class="top-nav-item d-none d-md-block dropdown-link">Account
+                </li>
+                <li class="top-nav-item dropdown-link  d-md-none">
+                  <i class="far fa-user-circle" aria-hidden="true"></i>
+                  <span class="visually-hidden">My account</span>
+              </li>
+              <li>
+                <a href="" class="top-nav-item d-none d-md-block">
+                  Cart
+                  <span class="cart-notification">
+
+                  </span>
+                </a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
   <body>
     <header class="container-fluid fixed-top"></header>
 
