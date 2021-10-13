@@ -19,6 +19,36 @@ body {
     margin-top: 4rem;
 }
 
+/* Top nav */
+.top-nav {
+    height: 5rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    transition: all .5s ease-in;
+}
+
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1rem;
+}
+
+button {
+    background: transparent;
+    border-width: 0;
+}
 
 .box-service-1 {
     background-color: #F3812F;
