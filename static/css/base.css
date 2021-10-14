@@ -28,6 +28,31 @@ body {
     transition: all .5s ease-in;
 }
 
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.top-nav-item {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.top-nav-item i {
+    font-size: 2rem;
+    color: #fff;
+}
+
 .flex-row-between {
     display: flex;
     flex-direction: row;
@@ -48,6 +73,39 @@ body {
 button {
     background: transparent;
     border-width: 0;
+}
+
+.line {
+    height: 0.2rem;
+    background-color: #EDEDE9;
+    margin: 0.4rem 0;
+    transform-origin: right;
+    transition: all 0.75s;
+}
+
+.first {
+    width: 5rem;
+}
+
+.second {
+    width: 3.5rem;
+}
+
+.third {
+    width: 5rem;
+}
+
+.logo {
+    display: none;
+}
+
+.text-shadow {
+    text-shadow: 0.5rem 0.5rem 0.8rem rgb(60 60 33 / 68%);
+    color: #fff
+}
+
+a {
+    transition: all .5s ease-in-out;
 }
 
 .box-service-1 {
@@ -202,4 +260,25 @@ button {
 
 .service {
     color: #fff;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .logo {
+        display: block;
+        font-size: 2.5rem;
+        margin-left: 20rem;
+        font-weight: 500;
+        color: #EDEDE9;
+        text-decoration: none;
+        margin-left: 20rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        font-size: 2.5rem;
+    }
 }
