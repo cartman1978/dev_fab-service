@@ -160,8 +160,11 @@
     {% endblock %}
 
     {% block postloadjs %}
+    <script src="{% static 'js/main.js' %}"></script>
     {% endblock %}
 
+    {% block other_end_js %}
+    {% endblock %}
     
   </body>
 </html>
