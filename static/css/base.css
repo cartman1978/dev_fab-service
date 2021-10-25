@@ -3,6 +3,7 @@ html {
     overflow-x: hidden;
 }
 
+
 .col {
     height: 100%;
 }
@@ -101,6 +102,10 @@ body {
     transform: rotate(-37deg) translateY(-9.5px);
 }
 
+.col {
+    height: 100%;
+}
+
 .cross-x, .cross-y {
     height: 0.2rem;
     background-color: #EDEDE9;
@@ -124,7 +129,9 @@ body {
     background-color: rgb(141, 141, 140);
 }
 
-
+.menu-account {
+    height: 50vh;
+}
 
 .side-nav-menu, .menu-account {
     display: flex;
