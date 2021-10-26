@@ -456,6 +456,24 @@ a {
     animation: animate 4s linear infinite;
 }
 
+/* #box-img {
+    width: 2rem;
+    position: relative;
+} */
+
+.image {
+    position: absolute;
+}
+
+.image img {
+    position: relative;
+    display: flex;
+    width: 9rem;
+    z-index: 1;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: center;
+}
 
 
 @keyframes animate 
