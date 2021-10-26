@@ -378,7 +378,7 @@ a {
 
 .box-service-1 {
     background-color: #F3812F;
-    height: 25rem;
+    height: 20rem;
     margin-top: 25rem;
     position: relative;
     align-items: center;
@@ -456,10 +456,6 @@ a {
     animation: animate 4s linear infinite;
 }
 
-/* #box-img {
-    width: 2rem;
-    position: relative;
-} */
 
 .image {
     position: absolute;
@@ -510,7 +506,7 @@ a {
 
 .box-service-2 {
     background-color: #D02C75;
-    height: 25rem;
+    height: 20rem;
     margin-top: 16rem;
     position: relative;
     align-items: center;
@@ -522,7 +518,7 @@ a {
 
 .box-service-3 {
     background-color: #582DD2;
-    height: 25rem;
+    height: 20rem;
     margin-top: 24rem;
     position: relative;
     align-items: center;
@@ -534,7 +530,7 @@ a {
 
 .box-service-4 {
     background-color: #F3812F;
-    height: 25rem;
+    height: 20rem;
     margin-top: 11rem;
     align-items: center;
     justify-content: center;
