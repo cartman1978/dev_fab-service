@@ -81,7 +81,6 @@ body {
 
 .side-nav {
     height: 100vh;
-    width: 37.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -100,11 +99,11 @@ body {
 }
 
 .cross-x {
-    transform: rotate(37deg) translateY(9.5px);
+    transform: rotate(36deg) translateY(8.5px);
 }
 
 .cross-y {
-    transform: rotate(-37deg) translateY(-9.5px);
+    transform: rotate(-36deg) translateY(-8.5px);
 }
 
 .col {
@@ -125,7 +124,7 @@ body {
     width: 4rem;
     position: fixed;
     top: 2.5rem;
-    right: 5rem;
+    right: 2rem;
     flex-direction: column;
 }
 
@@ -144,7 +143,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     list-style: none;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .open-side-nav li{
