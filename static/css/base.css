@@ -551,6 +551,18 @@ a {
     margin-bottom: 8rem;
 }
 
+.info-col {
+    flex-direction: column;
+    margin: 4rem 0;
+}
+
+.info-col p {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
 
 /* Media Queries */
 
