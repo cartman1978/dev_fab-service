@@ -13,6 +13,10 @@ html {
     height: 100%;
 }
 
+.row {
+    --bs-gutter-x: 0;
+}
+
 body {
     background-color: #190E5F;
     min-height: 100vh;
@@ -551,6 +555,8 @@ a {
     margin-bottom: 8rem;
 }
 
+/* Review section */
+
 .info-col {
     flex-direction: column;
     margin: 4rem 0;
@@ -561,6 +567,18 @@ a {
     font-size: 2rem;
     text-align: center;
     margin: 2rem 3rem;
+}
+
+.review {
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.title-review h2 {
+    margin: 4rem 0;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
 }
 
 
