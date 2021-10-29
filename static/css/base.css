@@ -681,6 +681,32 @@ strong {
     line-height: 2rem;
 }
 
+.social-col {
+    margin: 5rem 0;
+}
+
+.social-col h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.social-media {
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.social-media-links {
+    color: #fff;
+}
+
+.social-media-links i {
+    font-size: 1.5rem;
+}
+
 .footer-col a {
     font-size: 0.8rem;
     text-decoration: none;
