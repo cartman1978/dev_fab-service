@@ -664,6 +664,29 @@ strong {
 .footer-section {
     background-color: #582DD2;
 }
+
+.footer-col {
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+.footer-col h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-col i {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.footer-col a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
