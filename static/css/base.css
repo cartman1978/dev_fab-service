@@ -201,6 +201,7 @@ body {
     font-size: 1.5rem;
     padding: .5rem 3rem;
     border: .1rem solid #582DD2;
+    border-radius: 2rem;
     transition: all .5s ease-in;
 }
 
@@ -606,6 +607,22 @@ a {
 strong {
     font-size: 1.30rem;
     color: #582DD2;
+}
+
+.review-button {
+    width: 15rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.review-button-color {
+    color: #190E5F;
+    border: 1px solid #190E5F;
+    border-radius: 2rem;
 }
 
 /* Media Queries */
