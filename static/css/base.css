@@ -625,6 +625,12 @@ strong {
     border-radius: 2rem;
 }
 
+/* Newsletter section */
+
+.newsletter-section {
+    margin-top: 2%;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
