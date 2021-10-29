@@ -557,6 +557,10 @@ a {
 
 /* Review section */
 
+.review-section {
+    background-color:#F3812F;
+}
+
 .info-col {
     flex-direction: column;
     margin: 4rem 0;
@@ -578,13 +582,14 @@ a {
     margin: 4rem 0;
     font-size: 3rem;
     text-align: center;
-    color: #fff;
+    color: #190E5F;
+    font-weight: 700;
 }
 
 .stars {
     flex-direction: row;
     margin: 2.5% 0;
-    color: #fff;
+    color: #190E5F;
 }
 
 .stars i {
@@ -595,6 +600,12 @@ a {
     margin: 1rem 3rem;
     text-align: center;
     color: #fff;
+    font-size: 1.30rem;
+}
+
+strong {
+    font-size: 1.30rem;
+    color: #582DD2;
 }
 
 /* Media Queries */
