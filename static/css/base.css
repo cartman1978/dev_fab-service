@@ -658,6 +658,12 @@ strong {
     border: 1px solid #F3812F;
     border-radius: 2rem;
 }
+
+/* Footer */
+
+.footer-section {
+    background-color: #582DD2;
+}
 /* Media Queries */
 
 @media (min-width: 768px) {
