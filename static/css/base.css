@@ -397,7 +397,7 @@ a {
 .box-service-1 {
     background-color: #F3812F;
     height: 20rem;
-    margin-top: 25rem;
+    margin-top: 15rem;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -410,7 +410,7 @@ a {
     content: '';
     position: absolute;
     width: 150px;
-    height: 140%;
+    height: 340%;
     background: linear-gradient(#60d02c, #582DD2);
     animation: animate 4s linear infinite;
 }
@@ -427,7 +427,7 @@ a {
     content: '';
     position: absolute;
     width: 150px;
-    height: 140%;
+    height: 340%;
     background: linear-gradient(#60d02c, #582DD2);
     animation: animate 4s linear infinite;
 }
@@ -444,7 +444,7 @@ a {
     content: '';
     position: absolute;
     width: 150px;
-    height: 140%;
+    height: 340%;
     background: linear-gradient(#60d02c, #F3812F);
     animation: animate 4s linear infinite;
 }
@@ -469,7 +469,7 @@ a {
     content: '';
     position: absolute;
     width: 150px;
-    height: 140%;
+    height: 340%;
     background: linear-gradient(#D02C75, #582DD2);
     animation: animate 4s linear infinite;
 }
@@ -527,7 +527,7 @@ a {
 .box-service-2 {
     background-color: #D02C75;
     height: 20rem;
-    margin-top: 16rem;
+    margin-top: 7rem;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -539,7 +539,7 @@ a {
 .box-service-3 {
     background-color: #582DD2;
     height: 20rem;
-    margin-top: 24rem;
+    margin-top: 9rem;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -551,7 +551,7 @@ a {
 .box-service-4 {
     background-color: #F3812F;
     height: 20rem;
-    margin-top: 11rem;
+    margin-top: 10rem;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -739,6 +739,10 @@ strong {
     .side-nav {
         width: 37rem;
     }
+
+    .box-service-3 {
+        margin-top: 18rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -759,5 +763,21 @@ strong {
 
     .row {
         --bs-gutter-x: 1rem;
+    }
+
+    .box-service-1 {
+        margin-top: 25rem;
+    }
+
+    .box-service-2 {
+        margin-top: 16rem;
+    }
+
+    .box-service-3 {
+        margin-top: 24rem;
+    }
+
+    .box-service-4 {
+        margin-top: 11rem;
     }
 }
