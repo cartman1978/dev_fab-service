@@ -6,16 +6,16 @@ html {
 }
 
 * {
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .col {
     height: 100%;
 }
 
-/* .row {
+.row {
     --bs-gutter-x: 0;
-} */
+}
 
 body {
     background-color: #190E5F;
@@ -49,6 +49,7 @@ body {
     align-items: center;
     margin-right: 1rem;
     margin-top: 2rem;
+    padding: 0;
 }
 
 .top-nav-item {
@@ -740,7 +741,7 @@ strong {
 
 @media (min-width: 992px) {
     .logo {
-        font-size: 2.5rem;
+        font-size: rem;
     }
     .newsletter-form input {
         width: 65%;
