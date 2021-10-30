@@ -67,6 +67,10 @@ body {
     color: #fff;
 }
 
+.top-nav-scroll {
+    background-color:#D02C75;
+}
+
 .dropdown-link {
     transition: all .5s ease-in-out;
 }
@@ -203,6 +207,10 @@ body {
     border: .1rem solid #582DD2;
     border-radius: 2rem;
     transition: all .5s ease-in;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 .list-hidden {

@@ -32,3 +32,14 @@ closeNav.addEventListener("click", () => {
         navSide.classList.remove("show-side-nav");
     }, 500);
 });
+
+// on scroll change top-nav color
+
+window.addEventListener("scroll", () => {
+    let topNav = document.querySelector(".top-nav");
+    if(window.scrollY >= 100) {
+        topNav.classList.add("top-nav-scroll");
+    } else {
+        topNav.classList.remove("top-nav-scroll");
+    }
+});
