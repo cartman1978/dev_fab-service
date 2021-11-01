@@ -569,15 +569,16 @@ a {
 
 /* Review section */
 
-.animated {
-    transform: translateX(-100%);
+
+.reveal{
+    position: relative;
+    transform: translateY(100px);
     opacity: 0;
-    transition: transform 0.6s ease-in-out,
-    opacity 0.6s ease-in-out;
+    transition: all 2s ease;
 }
 
-.animated.active {
-    transform: translateX(0%);
+.reveal.active{
+    transform: translateY(0px);
     opacity: 1;
 }
 
@@ -652,6 +653,7 @@ strong {
 
 .newsletter-section {
     margin-top: 2%;
+    height: 20rem;
 }
 
 .newsletter-col, h2, h3 {

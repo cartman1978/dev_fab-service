@@ -44,17 +44,25 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// on scroll animate review section and newsletter
+// on scroll animate review section and Newsletter
 
-const animateReview = document.querySelector(".animated");
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', reveal);
 
-    const {scrollTop, clientHeight} = document.documentElement;
-    const viewElement = animateReview.getBoundingClientRect().top;
-    
+function reveal(){
+const reveals = document.querySelectorAll('.reveal');
 
-    if(scrollTop > (scrollTop + viewElement).toFixed() - clientHeight * 0.8){
-        animateReview.classList.add('active')
+for(var i = 0; i < reveals.length; i++){
+
+const windowheight = window.innerHeight;
+const revealtop = reveals[i].getBoundingClientRect().top;
+const revealpoint = 100;
+
+if(revealtop < windowheight - revealpoint){
+    reveals[i].classList.add('active');
     }
-});
+    else{
+    reveals[i].classList.remove('active');
+    }
+}
+}
