@@ -43,3 +43,18 @@ window.addEventListener("scroll", () => {
         topNav.classList.remove("top-nav-scroll");
     }
 });
+
+// on scroll animate review section and newsletter
+
+const animateReview = document.querySelector(".animated");
+
+window.addEventListener("scroll", () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+    const viewElement = animateReview.getBoundingClientRect().top;
+    
+
+    if(scrollTop > (scrollTop + viewElement).toFixed() - clientHeight * 0.8){
+        animateReview.classList.add('active')
+    }
+});
