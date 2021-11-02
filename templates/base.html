@@ -50,10 +50,10 @@
               <a href="{% url 'home' %}" class="logo text-shadow">DevFab</a>
               <ul>
                 <li class="d-none d-md-block">
-                  <a href="{% url 'view_wishlist' %}" class="top-nav-item">Wishlist</a>
+                  <a href="" class="top-nav-item">Wishlist</a>
                 </li>
                 <li class="top-nav-item d-md-none">
-                  <a href="{% url 'view_wishlist' %}">
+                  <a href="">
                     <i class="far fa-heart" aria-hidden="true"></i>
                     <span class="visually-hidden">Go to wishlist</span>
                   </a>
@@ -67,7 +67,7 @@
                   <span class="visually-hidden">My account</span>
               </li>
               <li>
-                <a href="{% url 'view_cart' %}" class="top-nav-item d-none d-md-block">
+                <a href="" class="top-nav-item d-none d-md-block">
                   Cart
                   {% if item_count %}
                   <span class="cart-notification">
@@ -77,7 +77,7 @@
                 </a>
               </li>
               <li class="d-md-none">
-                <a href="{% url 'view_cart' %}" class="top-nav-item">
+                <a href="" class="top-nav-item">
                   <i class="fas fa-shopping-bag" aria-hidden="true"></i>
                   {% if item_count %}
                   <span class="cart-notification d-md-none">
