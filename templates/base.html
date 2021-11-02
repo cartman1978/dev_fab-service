@@ -91,21 +91,26 @@
                 <span class="cross-y" aria-hidden="true"></span>
               </button>
               <ul class="menu-account" id="account-options">
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
                 <li class="item-account">
-                  <a href="">Service Control</a>
+                  <a href="{% url 'add_service' %}">Service Control</a>
+                </li>
+                {% endif %}
+                <li class="item-account">
+                  <a href="{% url 'profile' %}">My Account</a>
                 </li>
                 <li class="item-account">
-                  <a href="">My Account</a>
+                  <a href="{% url 'account_logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="item-account">
+                  <a href="{% url 'account_login' %}">Login</a>
                 </li>
                 <li class="item-account">
-                  <a href="">Logout</a>
+                  <a href="{% url 'account_signup' %}">Signup</a>
                 </li>
-                <li class="item-account">
-                  <a href="">Login</a>
-                </li>
-                <li class="item-account">
-                  <a href="">Signup</a>
-                </li>
+                {% endif %}
               </ul>
             </div>
           </div>
