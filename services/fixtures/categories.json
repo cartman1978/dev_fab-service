@@ -1,0 +1,34 @@
+[{
+    "pk": 1,
+    "model": "services.category",
+    "fields": {
+        "name": "webapp",
+        "display_name": "Web Development Application"
+    }
+},
+{
+    "pk": 2,
+    "model": "services.category",
+    "fields": {
+        "name": "ecommerce",
+        "display_name": "E-commerce"
+    }
+},
+{
+    "pk": 3,
+    "model": "services.category",
+    "fields": {
+        "name": "fullstack",
+        "display_name": "Full-Stack Web Application"
+    }
+},
+{
+    "pk": 4,
+    "model": "services.category",
+    "fields": {
+        "name": "other",
+        "display_name": "Other Services"
+    }
+}
+
+]
