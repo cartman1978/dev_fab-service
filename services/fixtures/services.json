@@ -1,0 +1,13 @@
+[{
+    "pk": 1,
+    "model": "services.item",
+    "fields": {
+        "code": 1,
+        "name": "Responsive Web Design",
+        "description": "Mobile and Tablet Friendly, better user experience. Increase mobile sales.",
+        "pages": "Up to 10 pages",
+        "price": "250.00",
+        "category": 1,
+        "image": "goonline.jpg"
+    }
+}]
