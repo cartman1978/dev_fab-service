@@ -106,5 +106,65 @@
             "category": 2,
             "image": "ecommerce.jpg"
         }
+    },
+    {
+        "pk": 10,
+        "model": "services.item",
+        "fields": {
+            "code": 10,
+            "name": "Standard MERN Full Stack Development",
+            "description": "Scalable solutions with front-end and back-end frameworks and database management. MongoDB, React, Express and Node.js, Third-Party API's Integration and Payment Gateway Integration (PayPal, Stripe). Number of pages up to 10",
+            "price": "300.00",
+            "category": 3,
+            "image": "mern.png"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "services.item",
+        "fields": {
+            "code": 11,
+            "name": "Advanced MERN Full Stack Development",
+            "description": "Scalable solutions with front-end and back-end frameworks and database management. MongoDB, React, Express and Node.js, Third-Party API's Integration and Payment Gateway Integration (PayPal, Stripe). Number of pages up to 20",
+            "price": "500.00",
+            "category": 3,
+            "image": "mern2.png"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "services.item",
+        "fields": {
+            "code": 12,
+            "name": "Standard Full Stack Python",
+            "description": "web Frameworks Django and Flask, Template Enjine Jinja2 and Django Templates. API Integration (Twillo Stripe), Relational Database PostgreSQL and MySQL Number of pages up to 10",
+            "price": "300.00",
+            "category": 3,
+            "image": "python.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "services.item",
+        "fields": {
+            "code": 13,
+            "name": "Advanced Full Stack Python",
+            "description": "web Frameworks Django and Flask, Template Enjine Jinja2 and Django Templates. API Integration (Twillo Stripe), Relational Database PostgreSQL and MySQL Number of pages up to 20",
+            "price": "500.00",
+            "category": 3,
+            "image": "python.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "services.item",
+        "fields": {
+            "code": 14,
+            "name": "Social Media Landing Page",
+            "description": "Specific call-to-action (signing up for a list or pusrchasing a particular product). Links to Instagram bio, Facebook page or any social",
+            "price": "500.00",
+            "category": 4,
+            "image": "socials.jpg"
+        }
     }
 ]
