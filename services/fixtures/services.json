@@ -1,46 +1,110 @@
-[{
-    "pk": 1,
-    "model": "services.item",
-    "fields": {
-        "code": 1,
-        "name": " Standard Responsive Website",
-        "description": "Mobile and Tablet Friendly better user experience. Increase mobile sales. Number of pages up to 10",
-        "price": "250.00",
-        "category": 1,
-        "image": "goonline.jpg"
-    }
-    }, {
-        "pk": 2,
+[
+    {
+        "pk": 1,
         "model": "services.item",
         "fields": {
             "code": 1,
-            "name": " Enterprise Responsive Website",
+            "name": " Standard Responsive Website",
+            "description": "Mobile and Tablet Friendly better user experience. Increase mobile sales. Number of pages up to 10",
+            "price": "250.00",
+            "category": 1,
+            "image": "goonline.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "services.item",
+        "fields": {
+            "code": 2,
+            "name": " Advanced Responsive Website",
             "description": "Mobile and Tablet Friendly better user experience. Increase mobile sales. Number of pages up to 20",
             "price": "580.00",
             "category": 1,
             "image": "responsive.png"
-    }
-}, {
-    "pk": 3,
-    "model": "services.item",
-    "fields": {
-        "code": 1,
-        "name": " Standard React Website",
-        "description": "React JS is designed for amazing frontend development, with fast, performant solutions. Number of pages up to 10",
-        "price": "280.00",
-        "category": 1,
-        "image": "goonline.jpg"
         }
-    }, {
+    },
+    {
+        "pk": 3,
+        "model": "services.item",
+        "fields": {
+            "code": 3,
+            "name": " Standard React Website",
+            "description": "React JS is designed for amazing frontend development, with fast, performant solutions. Number of pages up to 10",
+            "price": "280.00",
+            "category": 1,
+            "image": "react.jpg"
+        }
+    },
+    {
         "pk": 4,
         "model": "services.item",
         "fields": {
-            "code": 1,
+            "code": 4,
             "name": " Advanced React Website",
             "description": "React JS is designed for amazing frontend development, with fast, performant solutions. Number of pages up to 20",
             "price": "780.00",
             "category": 1,
-            "image": "goonline.jpg"
-            }
+            "image": "react.jpg"
         }
+    },
+    {
+        "pk": 5,
+        "model": "services.item",
+        "fields": {
+            "code": 5,
+            "name": " Standard Django Website",
+            "description": "Supports MVC programming paradigm, compatible with major operating systems and database. Provides robust security features. Easy to extend and scale. Number of pages up to 10.",
+            "price": "330.00",
+            "category": 1,
+            "image": "django.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "services.item",
+        "fields": {
+            "code": 6,
+            "name": " Advanced Django Website",
+            "description": "Supports MVC programming paradigm, compatible with major operating systems and database. Provides robust security features. Easy to extend and scale. Number of pages up to 20.",
+            "price": "700.00",
+            "category": 1,
+            "image": "django.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "services.item",
+        "fields": {
+            "code": 7,
+            "name": "Standard Ecommerce Website Design",
+            "description": "Sell your products online, Fashion & Beauty Website, Food & Drink or Departement Stores. Stripe & PayPal Payment.  Number of pages up to 30.",
+            "price": "1500.00",
+            "category": 2,
+            "image": "ecommerce.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "services.item",
+        "fields": {
+            "code": 8,
+            "name": "Advanced Ecommerce Website Design",
+            "description": "Sell your products online, Fashion & Beauty Website, Food & Drink or Departement Stores. Stripe & PayPal Payment.  Number of pages up to 50.",
+            "price": "2500.00",
+            "category": 2,
+            "image": "ecommerce.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "services.item",
+        "fields": {
+            "code": 9,
+            "name": "Shopify ecommerce",
+            "description": "Online store development using Shopify, store Customizations and enhancement and Shopify Store Maintenance and support.",
+            "price": "700.00",
+            "category": 2,
+            "image": "ecommerce.jpg"
+        }
+    }
 ]
