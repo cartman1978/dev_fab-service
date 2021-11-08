@@ -738,6 +738,18 @@ strong {
     color: #fff;
 }
 
+/* Services  */
+
+.service-header {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {

@@ -14,8 +14,26 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            {{ item }}
+            <div class="col flex-center service-header">
+                <h1>Our Services</h1>
+        
+            </div>
         </div>
+    </div>
+    <div class="row">
+
+        {% for item in item %}
+        <div class="card-body">
+            <p >{{ item.name }}</p>
+            <p>€{{ item.price }} Per Day</p>
+            <a href="">
+                <img src="{{ item.image.url }}" alt="{{ item.name }}">
+            </a>
+        </div>
+            <p>{{ item.name }}</p>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
+
+
