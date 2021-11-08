@@ -98,11 +98,11 @@
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                 <li class="item-account">
-                  <a href="{% url 'add_service' %}">Service Control</a>
+                  <a href="">Service Control</a>
                 </li>
                 {% endif %}
                 <li class="item-account">
-                  <a href="{% url 'profile' %}">My Account</a>
+                  <a href="">My Account</a>
                 </li>
                 <li class="item-account">
                   <a href="{% url 'account_logout' %}">Logout</a>
