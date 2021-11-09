@@ -30,7 +30,9 @@
             <div class="box-service-2">
                 <p class="service">E-commerce</p> 
                 <div class="image">
-                    <img src="/media/ecommerce.jpg" alt="web-application">
+                    <a href="{% url 'services' %}?category=ecommerce">
+                        <img src="/media/ecommerce.jpg" alt="web-application">
+                    </a>
                 </div>
             </div>
         </div>
@@ -38,7 +40,9 @@
             <div class="box-service-3">
                 <p class="service">Full-Stack Web Application</p> 
                 <div class="image">
-                    <img src="/media/fullstack.jpeg" alt="web-application">
+                    <a href="{% url 'services' %}?category=fullstack">
+                        <img src="/media/fullstack.jpeg" alt="web-application">
+                    </a>
                 </div>
             </div>
         </div>
@@ -46,7 +50,9 @@
             <div class="box-service-4">
                 <p class="service">Other Services</p>
                 <div class="image">
-                    <img src="/media/service.jpg" alt="web-application">
+                    <a href="{% url 'services' %}?category=other">
+                        <img src="/media/service.jpg" alt="web-application">
+                    </a>
                 </div>
             </div>
         </div>
