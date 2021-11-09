@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .models import Item
+from django.shortcuts import (render, get_object_or_404)
+from .models import Item, Category
 
 
 def all_items(request):
@@ -9,9 +9,19 @@ def all_items(request):
     """
     
     items = Item.objects.all()
+    category = None
+    current_category = None
+    
+    if request.GET and "category" in request.GET:
+        category = request.GET["category"]
+        items = items.filter(category__name=category)
+        current_category = get_object_or_404(Category, name=category)
+
+    template = "services/services.html"
     
     context = {
-        'item': items
+        'item': items,
+        'current_category': current_category
     }
     
     return render(request, 'services/services.html', context)
