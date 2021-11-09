@@ -762,6 +762,12 @@ h1 {
     margin-bottom: 3rem;
 }
 
+.service-title {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
 .item-box {
     border-radius: 20px;
     background: #F3812F;
