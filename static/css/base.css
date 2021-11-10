@@ -802,8 +802,10 @@ hr {
 .item-box::before {
     content: '';
     position: absolute;
-    width: 370px;
-    height: 380%;
+    margin-top: -12rem;
+    margin-left: 10rem;
+    width: 110px;
+    height: 180%;
     background: linear-gradient(#60d02c, #582DD2);
     animation: snake 4s linear infinite;
 }
