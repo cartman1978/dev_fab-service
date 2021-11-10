@@ -742,7 +742,7 @@ strong {
 
 .service-header {
     margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 h1 {
@@ -767,26 +767,65 @@ h1 {
     font-weight: 700;
     color: #190E5F;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .service-description {
     color: #fff;
     font-size: 1.2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .price {
     color: #190E5F;
     font-size: 1.4rem;
     font-weight: 700;
+    position: relative;
+    z-index: 10;
 }
 
 hr {
     border: 1px solid #582DD2;
+    position: relative;
+    z-index: 10;
 }
 
 .item-box {
     border-radius: 20px;
     background: #F3812F;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-box::before {
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 380%;
+    background: linear-gradient(#60d02c, #582DD2);
+    animation: snake 4s linear infinite;
+}
+
+.item-box::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #F3812F;
+    border-radius: 16px;
+}
+
+@keyframes snake 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
 }
 
 /* Media Queries */
