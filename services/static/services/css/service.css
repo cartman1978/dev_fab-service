@@ -5,3 +5,46 @@
 .service-row {
     padding-top: 8rem;
 }
+
+.service-img-col {
+    flex-direction: column;
+}
+
+.service-img-col img {
+    height: 35rem;
+    width: 25rem;
+}
+
+.service-img-container {
+    position: relative;
+}
+
+.service-details-col {
+    margin: 6rem 0 6rem 5rem;
+    width: 25rem;
+}
+
+.service-details {
+    margin: 1rem;
+}
+
+.service-details p {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .service-container {
+        min-height: 85rem;
+    }
+    .service-img-col img {
+        height: 40rem;
+        width: 29rem;
+    }
+    .service-details h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .service-details p {
+        font-size: 1.75rem;
+    }
+}
