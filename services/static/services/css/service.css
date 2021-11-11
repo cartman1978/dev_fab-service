@@ -13,6 +13,7 @@
 .service-img-col img {
     height: 25rem;
     width: 25rem;
+    border-radius: 20px;
 }
 
 .service-img-container {
@@ -40,6 +41,17 @@
 
 .service-details hr  {
     border: 1px solid #F3812F;
+}
+
+.service-cat-link {
+    color: #F3812F;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    transition: all .30s ease-in;
+}
+
+.service-quantity {
+    width: 18rem;
 }
 
 @media (min-width: 768px) {
