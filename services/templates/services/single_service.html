@@ -20,6 +20,11 @@
         <div class="col-12 col-md-6 service-details-col flex-center">
             <div class="service-details">
                 <h3>{{ item.name }}</h3>
+                <hr>
+                <a class="service-cat-link"
+                    href="{% url 'services' %}?category={{ item.category.name }}">{{ item.category.display_name }}</a>
+                <h5>{{ item.description }}</h5>
+                <hr>
                 <p>€ {{ item.price }}</p>
             </div>
         </div>

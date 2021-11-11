@@ -11,7 +11,7 @@
 }
 
 .service-img-col img {
-    height: 35rem;
+    height: 25rem;
     width: 25rem;
 }
 
@@ -30,6 +30,16 @@
 
 .service-details p {
     font-size: 1.5rem;
+    color: #fff;
+}
+
+.service-details h5 {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.service-details hr  {
+    border: 1px solid #F3812F;
 }
 
 @media (min-width: 768px) {
@@ -37,7 +47,7 @@
         min-height: 85rem;
     }
     .service-img-col img {
-        height: 40rem;
+        height: 20rem;
         width: 29rem;
     }
     .service-details h3 {
