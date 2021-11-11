@@ -3,3 +3,28 @@
 {% block other_css %}
 <link rel="stylesheet" href="{% static 'services/css/service.css' %}">
 {% endblock %}
+{% block title %}
+{{ item.name }}
+{% endblock %}
+{% block main_content %}
+<div class="container service-container">
+    <div class="row service-row">
+        <div class="col-12 col-md-6 service-img-col flex-center">
+            <!-- display like and unlike button -->
+            <div class="service-img-container">
+                {% if item.image %}
+                <img src="{{ MEDIA_URL }}{{ item.image }}" alt="image for {{ item.name }}">
+                {% else %}
+                <img src="{{ MEDIA_URL }}imagenotfound.png" alt="No image found for {{ item.name }}">
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 service-details-col flex-center">
+            <div class="service-details">
+                <h3>{{ item.name }}</h3>
+                <p>€ {{ item.price }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
