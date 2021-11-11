@@ -1,6 +1,6 @@
 from django.shortcuts import (render, get_object_or_404)
 
-import services
+
 from .models import Item, Category
 
 
@@ -30,14 +30,13 @@ def all_items(request):
 
 
 def single_item(request, item_id):
-    """ Show single service page"""
-    
+    ''' Shows the single service page '''
+
     item = get_object_or_404(Item, pk=item_id)
-    
-    template = "services/single_service.html"
-    
+
+
     context = {
         "item": item
     }
-    
-    return render(request, template, context)
+
+    return render(request, 'services/single_service.html', context)
