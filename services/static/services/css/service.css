@@ -125,6 +125,11 @@ input[type="number"], table input[type="number"] {
     color:#D02C75;
 }
 
+.wishlist-btn-add {
+    color: #582DD2;
+    border-color: #582DD2;
+}
+
 @media (min-width: 768px) {
     .service-container {
         min-height: 85rem;
