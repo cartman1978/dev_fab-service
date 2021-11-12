@@ -22,7 +22,7 @@
 
 .service-details-col {
     margin: 6rem 0 6rem 5rem;
-    width: 25rem;
+    width: 27rem;
 }
 
 .service-details {
@@ -36,7 +36,7 @@
 
 .service-details h5 {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .service-details hr  {
@@ -139,7 +139,7 @@ input[type="number"], table input[type="number"] {
         width: 29rem;
     }
     .service-details h3 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin-bottom: 2.5rem;
     }
     .service-details p {
