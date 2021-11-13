@@ -126,7 +126,7 @@
                 <span class="cross-y" aria-hidden="true"></span>
               </button>
               <ul class="side-nav-menu open-side-nav">
-                <li class="side-nav-item search">
+                <!-- <li class="side-nav-item search">
                   Search
                   <i class="fas fa-search nav-icon" aria-hidden="true"></i>
                 </li>
@@ -136,12 +136,21 @@
                     <input id="query" type="text" name="query" placeholder="search">
                     <button type="submit">Search</button>
                   </form>
+                </li> -->
+                <li class="side-nav-item">
+                  <a href="{% url 'home' %}">Homepage</a>
                 </li>
                 <li class="side-nav-item">
-                  <a href="">Homepage</a>
+                  <a href="{% url 'services' %}?category=webapp">Web Application</a>
                 </li>
                 <li class="side-nav-item">
-                  <a href="">Web Services</a>
+                  <a href="{% url 'services' %}?category=ecommerce">E-Commerce</a>
+                </li>
+                <li class="side-nav-item">
+                  <a href="{% url 'services' %}?category=fullstack">Full-Stack Web App</a>
+                </li>
+                <li class="side-nav-item">
+                  <a href="{% url 'services' %}?category=other">Other Services</a>
                 </li>
                 <li class="side-nav-item">
                   <a href="">Contact Us</a>
