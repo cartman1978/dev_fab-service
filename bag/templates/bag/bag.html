@@ -7,7 +7,106 @@ Your Cart
 {% endblock %}
 {% block main_content %}
 <div class="container page-container">
-    bag
+    <div class="row">
+        <div class="col bag-heading page-heading text-center">
+            <h1>Shopping Cart</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% if bag_items %}
+            <div class="bag-table">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    {% for item in bag_items %}
+                    <tr>
+                        <td>
+                            {% if item.item.image %}
+                                <img src="{{ MEDIA_URL }}{{ item.item.image }}" alt="image of {{ item.item.name }}"
+                                class="table-image">
+                            {% else %}
+                                <img src="{{ MEDIA_URL }}imagenotfound.png" alt="No image found for {{ item.item.name }}"
+                                class="table-image">
+                            {% endif %}
+                                <p class="mt-2 d-md-none">
+                                    {{ item.item.name }}
+                                </p>
+                        </td>
+                        <td>
+                            <p class="d-none d-md-block">
+                                {{ item.item.name }}
+                            </p>
+                        </td>
+                        <td>
+                            <p>€ </p>
+                        </td>
+                        <td>
+                            <form class="bag-quantity-form" method="POST"
+                                action="">
+                                {% csrf_token %}
+                                <div class="checkout-no-input flex-row-between">
+                                    <div class="minus-btn flex-center">
+                                        <i class="fas fa-minus"></i>
+                                        <span class="sr-only">
+                                            decrement button</span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="item_quantity_{{item.item_id}}">
+                                            <span class="visually-hidden">
+                                                Item Quantity</span>
+                                        </label>
+                                        <div>
+                                            <input class="mt-2" type="number" value="{{ item.quantity }}"
+                                                name="item_quantity" min="0" max="9"
+                                                id="item_quantity_{{item.item_id}}">
+                                        </div>
+                                    </div>
+                                    <div class="plus-btn  flex-center">
+                                        <i class="fas fa-minus flex-center" aria-hidden="true"></i>
+                                        <span class="sr-only">increment button</span>
+                                    </div>
+                                </div>
+                            </form>
+                            <a class="update-quantity-link">Update
+                            </a>
+                            <a class="remove-bag-item text-danger " id="remove_{{ item.item_id }}">Remove</a>
+                        </td>
+                        <td>
+                            <p>€ </p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td colspan="5" class="pt-4  text-end">
+                            <p>Total: € </p>
+                            <p>Delivery: € </p>
+                            <p class="bag-total-price">Total Price : € </p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="bag-links d-flex justify-content-end">
+                    <a href="{% url 'services' %}" class="item-link-light item-link-button  flex-center">Keep
+                        Shopping</a>
+                    <a href="" class="item-link-dark item-link-button  flex-center">Checkout</a>
+                </div>
+            </div>
+            {% else %}
+                <div class="bag-no-items text-center">
+                    <p>No items in shopping bag</p>
+                    <a href="{% url 'services' %}" class="item-link-light item-link-button m-auto flex-center">Keep
+                        Shopping</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% endblock %}
 
