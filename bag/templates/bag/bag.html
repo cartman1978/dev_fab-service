@@ -101,8 +101,10 @@ Your Cart
             {% else %}
                 <div class="bag-no-items text-center">
                     <p>No items in shopping bag</p>
-                    <a href="{% url 'services' %}" class="item-link-light item-link-button m-auto flex-center">Keep
+                    <button class="service-keep-shop service-link-button">
+                    <a href="{% url 'services' %}" >Keep
                         Shopping</a>
+                    </button>
                 </div>
             {% endif %}
         </div>

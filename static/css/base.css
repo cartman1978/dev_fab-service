@@ -805,6 +805,28 @@ hr {
     }
 }
 
+/* Bag page */
+
+.page-heading {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.page-container {
+    min-height: 80vh;
+}
+
+.bag-no-items {
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.bag-no-items p {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
