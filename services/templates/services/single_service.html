@@ -28,8 +28,8 @@
                 <h5>{{ item.description }}</h5>
                 <hr>
                 <p>€ {{ item.price }}</p>
-                <form class="form service-form mt-3" action="" method="POST">
-                
+                <form class="form service-form mt-3" action="{% url 'add_to_bag' item.id %}" method="POST">
+                    {% csrf_token %}
                     <div class=" flex-row-between service-quantity">
                         <div class="minus-btn flex-center">
                             <i class="fas fa-minus"></i>
@@ -51,7 +51,7 @@
                     <input type="hidden" name="redirect_url" value="">
                 </form>
                 <button class="service-keep-shop service-link-button  flex-center">
-                    <a href="" >Keep Shopping</a>
+                    <a href="{% url 'services' %}" >Keep Shopping</a>
                 </button>
 
                 <button type="submit" class="service-link-button flex-center wishlist-btn-add">
@@ -61,4 +61,12 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block other_end_js %}
+{{ block.super }}
+<script>
+    let csrfToken = "{{ csrf_token }}";
+</script>
+
 {% endblock %}

@@ -49,8 +49,7 @@ Your Cart
                             <p>€ </p>
                         </td>
                         <td>
-                            <form class="bag-quantity-form" method="POST"
-                                action="">
+                            <form class="bag-quantity-form" action="{% url 'add_to_bag' item.id %}" method="POST">
                                 {% csrf_token %}
                                 <div class="checkout-no-input flex-row-between">
                                     <div class="minus-btn flex-center">
@@ -110,5 +109,13 @@ Your Cart
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block other_end_js %}
+{{ block.super }}
+<script>
+    let csrfToken = "{{ csrf_token }}";
+</script>
+
 {% endblock %}
 
