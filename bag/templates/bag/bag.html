@@ -49,7 +49,7 @@ Your Cart
                             <p>€ </p>
                         </td>
                         <td>
-                            <form class="bag-quantity-form" action="{% url 'add_to_bag' item.id %}" method="POST">
+                            <form class="bag-quantity-form" action="{% url 'add_to_bag' item.item_id %}" method="POST">
                                 {% csrf_token %}
                                 <div class="checkout-no-input flex-row-between">
                                     <div class="minus-btn flex-center">
