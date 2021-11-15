@@ -827,6 +827,11 @@ hr {
     color: #fff;
 }
 
+.table-image {
+    height: 8rem;
+    width: 7rem;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -882,6 +887,18 @@ hr {
 
     .box-service-4 {
         margin-top: 11rem;
+    }
+
+    .table-image {
+        height: 10rem;
+        width: 9rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .table-image {
+        height: 11rem;
+        width: 13rem;
     }
 }
 
