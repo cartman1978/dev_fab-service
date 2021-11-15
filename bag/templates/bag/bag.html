@@ -9,7 +9,7 @@ Your Cart
 <div class="container page-container">
     <div class="row">
         <div class="col bag-heading page-heading text-center">
-            <h1>Shopping Cart</h1>
+            <h1>Shopping Bag</h1>
         </div>
     </div>
     <div class="row">
@@ -46,7 +46,7 @@ Your Cart
                             </p>
                         </td>
                         <td>
-                            <p>€ </p>
+                            <p>€ {{ item.item.price }} </p>
                         </td>
                         <td>
                             <form class="bag-quantity-form" action="{% url 'add_to_bag' item.item_id %}" method="POST">
@@ -79,14 +79,13 @@ Your Cart
                             <a class="remove-bag-item text-danger " id="remove_{{ item.item_id }}">Remove</a>
                         </td>
                         <td>
-                            <p>€ </p>
+                            <p>€ {{ item.item.price }}</p>
                         </td>
                     </tr>
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-4  text-end">
-                            <p>Total: € </p>
-                            <p>Delivery: € </p>
+                            <p>Total: € {{ total }}</p>
                             <p class="bag-total-price">Total Price : € </p>
                         </td>
                     </tr>

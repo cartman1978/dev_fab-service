@@ -832,6 +832,34 @@ hr {
     width: 7rem;
 }
 
+th {
+    font-size: 1.30rem;
+    color: #fff;
+}
+
+td p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 2.6rem;
+}
+
+.checkout-no-input {
+    margin-bottom: 1.5rem;
+    width: 10rem;
+}
+
+.plus-btn, .minus-btn {
+    border: 0.1rem solid #F3812F;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 1.3rem;
+    transition: all .5s ease-in-out;
+}
+
+.plus-btn i, .minus-btn i {
+    font-size: 2.5rem;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -893,12 +921,28 @@ hr {
         height: 10rem;
         width: 9rem;
     }
+
+    th {
+        font-size: 1.5rem;
+    }
+
+    td p {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 1200px) {
     .table-image {
         height: 11rem;
         width: 13rem;
+    }
+
+    th {
+        font-size: 1.75rem;
+    }
+
+    td p {
+        font-size: 1.5rem;
     }
 }
 
