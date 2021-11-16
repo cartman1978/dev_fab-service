@@ -86,21 +86,25 @@ Your Cart
                     <tr>
                         <td colspan="5" class="pt-4  text-end">
                             <p>Total: € {{ total }}</p>
-                            <p class="bag-total-price">Total Price : € </p>
+                            <!-- <p class="bag-total-price">Total Price : € </p> -->
                         </td>
                     </tr>
                 </table>
                 <div class="bag-links d-flex justify-content-end">
+                    <button class="service-keep-shop service-link-button  flex-center">
                     <a href="{% url 'services' %}" class="item-link-light item-link-button  flex-center">Keep
                         Shopping</a>
+                    </button>
+                    <button type="submit" class="service-link-button flex-center wishlist-btn-add">
                     <a href="" class="item-link-dark item-link-button  flex-center">Checkout</a>
+                </button>
                 </div>
             </div>
             {% else %}
                 <div class="bag-no-items text-center">
                     <p>No items in shopping bag</p>
                     <button class="service-keep-shop service-link-button">
-                    <a href="{% url 'services' %}" >Keep
+                    <a href="{% url 'services' %}" class="service-link-button flex-center">Keep
                         Shopping</a>
                     </button>
                 </div>
