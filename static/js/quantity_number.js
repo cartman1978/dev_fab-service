@@ -26,3 +26,4 @@ decreaseBtn.forEach((button) => {
         }
     });
 });
+

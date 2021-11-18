@@ -113,13 +113,12 @@ Your Cart
     </div>
 </div>
 {% endblock %}
-
 {% block other_end_js %}
 {{ block.super }}
 <script>
     let csrfToken = "{{ csrf_token }}";
 </script>
 <script src="{% static 'js/quantity_number.js' %}"></script>
-
+<script src="{% static 'bag/js/bag.js' %}"></script>
 {% endblock %}
 
