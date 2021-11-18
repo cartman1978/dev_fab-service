@@ -849,6 +849,11 @@ td p {
     margin-top: 2.6rem;
 }
 
+.total-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 .checkout-no-input {
     margin-bottom: 1.5rem;
     width: 10rem;
