@@ -1,5 +1,5 @@
-from django.shortcuts import render, redirect
-
+from django.shortcuts import get_object_or_404, render, redirect, reverse
+from services.models import Item
 
 
 def view_bag(request):
@@ -22,3 +22,21 @@ def add_to_bag(request, item_id):
         
     request.session['bag'] = bag
     return redirect(redirect_url)
+
+
+def update_bag(request, item_id):
+    """ A view to update quantity of the item to the specified amount"""
+    
+    if request.method == 'POST':
+        item = get_object_or_404(Item, pk=item_id)
+        quantity = int(request.POST.get('item_quantity'))
+        bag = request.session.get('bag', {})
+        
+        if quantity > 0:
+            bag[item_id] = quantity
+        else:
+            bag.pop(item_id)
+            
+        request.session["bag"] = bag
+        return redirect(reverse("view_bag"))
+        
