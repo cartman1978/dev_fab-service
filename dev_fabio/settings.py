@@ -40,9 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    # The following apps are required by allauth:
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    # others
+    'django.contrib.humanize',
     'home',
     'services',
     'bag',
@@ -84,6 +87,8 @@ TEMPLATES = [
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
     
