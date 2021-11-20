@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect, reverse
 from services.models import Item
 
@@ -39,4 +40,19 @@ def update_bag(request, item_id):
             
         request.session["bag"] = bag
         return redirect(reverse("view_bag"))
-        
+
+
+def remove_bag(request, item_id):
+    """ A view to remove item from the shopping bag"""
+    try:
+        if request.method == 'POST':
+            item = get_object_or_404(Item, pk=item_id)
+            bag = request.session.get('bag', {})
+            
+            bag.pop(item_id)
+            
+                
+            request.session["bag"] = bag
+            return HttpResponse(status=200)   
+    except Exception as e:
+        return HttpResponse(status=500)

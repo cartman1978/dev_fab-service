@@ -6,7 +6,7 @@ updateLink.forEach((link) => {
         form.submit();
     });
 });
-//  items from the cart
+// remove items from the cart
 let removeLink = document.querySelectorAll(".remove-bag-item");
 removeLink.forEach((link) => {
     link.addEventListener("click", () => {
