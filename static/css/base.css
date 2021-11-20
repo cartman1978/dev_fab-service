@@ -385,22 +385,20 @@ a {
     max-width: 100vw;
 }
 
-.bag-links a {
-    margin-left: 1rem;
+.custom-toast {
+    overflow: visible;
 }
 
-.toast {
-    border-radius: 0;
-}
-
-.successful-toast {
-    width: 50rem;
+.toast-capper {
+    height: 2px;
 }
 
 .btn-close {
     font-size: 1.5rem;
-    padding: .5rem;
-    margin-right: 2rem;
+}
+
+.p-message {
+    margin-right: 27rem;
 }
 
 .box-service-1 {

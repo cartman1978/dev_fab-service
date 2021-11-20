@@ -12,17 +12,19 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """ A view to add item to the bag"""
-    
-    item = get_object_or_404(Item, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
-    bag = request.session.get('bag', {})
+    if request.method == "POST":
+        item = get_object_or_404(Item, pk=item_id)
+        quantity = int(request.POST.get('quantity'))
+        redirect_url = request.POST.get('redirect_url')
+        bag = request.session.get('bag', {})
     
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {item.name} to your bag')
+        messages.success(request,
+                             f"{item.name} \
+has been added to your bag.", extra_tags="show_items")
         
     request.session['bag'] = bag
     return redirect(redirect_url)
