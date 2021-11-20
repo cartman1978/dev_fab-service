@@ -20,11 +20,14 @@ def add_to_bag(request, item_id):
     
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
+        messages.success(request,
+                        f"Updated {item.name} \
+                            quantity to {bag[item_id]}")
     else:
         bag[item_id] = quantity
         messages.success(request,
-                             f"{item.name} \
-has been added to your bag.", extra_tags="show_items")
+                            f"{item.name} \
+                            has been added to your bag.")
         
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -40,9 +43,14 @@ def update_bag(request, item_id):
         
         if quantity > 0:
             bag[item_id] = quantity
+            messages.success(request,
+                            f"Updated {item.name} \
+                            quantity to {bag[item_id]}.")
         else:
             bag.pop(item_id)
-            
+            messages.success(request,
+                            f"Removed {item.name} \
+                            from your bag.")
         request.session["bag"] = bag
         return redirect(reverse("view_bag"))
 
@@ -55,9 +63,12 @@ def remove_bag(request, item_id):
             bag = request.session.get('bag', {})
             
             bag.pop(item_id)
-            
+            messages.success(request,
+                            f"Removed {item.name} \
+                            from your bag.")
                 
             request.session["bag"] = bag
             return HttpResponse(status=200)   
     except Exception as e:
+        messages.error(request, f"Error removing item: {e}")
         return HttpResponse(status=500)
