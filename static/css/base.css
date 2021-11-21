@@ -369,6 +369,17 @@ a {
     transition: all .5s ease-in-out;
 }
 
+/* Bag */
+
+.bag-notification {
+    background-color: #F3812F;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.20rem;
+    margin-left: 0.40rem;
+}
+
 /* Toasts */
 
 .message-container {
