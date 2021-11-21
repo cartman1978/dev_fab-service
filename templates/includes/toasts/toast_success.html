@@ -18,7 +18,7 @@
         <p class="p-bag">Your Bag ({{ item_count }})</p>
         <div class="bag-notification-wrapper">
             {% for item in bag_items %}
-            <div class="row">
+            <div class="row bag-wrap-row">
                 <div class="col-3 my-1">
                     <img class="w-100" src="{{ MEDIA_URL }}{{ item.item.image.url }}" alt="image of {{ item.name }}">
                 </div>
