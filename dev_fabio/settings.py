@@ -44,12 +44,14 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    # others
+    # site Apps
     'django.contrib.humanize',
     'home',
     'services',
     'bag',
     'checkout',
+    # Others
+    'crispy_forms',
     
 ]
 
@@ -64,6 +66,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'dev_fabio.urls'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
