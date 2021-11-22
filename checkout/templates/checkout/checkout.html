@@ -16,19 +16,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
+    
+    <div class="container page-container">
         <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Checkout</h2>
-                <hr>
+            <div class="col flex-center page-heading">
+               <h1>Checkout</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <p class="text-muted">Order Summary ({{ product_count }})</p>
+            <div class="col-12 col-md-6 order-md-last px-2">
+                <p class="text-muted">Order Summary ({{ item_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -61,13 +59,9 @@
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
-                        <p class="my-0">Delivery:</p>
-                        <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
                         <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
