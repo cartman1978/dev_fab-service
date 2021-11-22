@@ -427,6 +427,7 @@ a {
     font-size: 1.6rem;
 }
 
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -472,6 +473,67 @@ a {
     border-bottom-color: #343a40 !important;
 }
 
+/* Form */
+
+.form-control {
+    font-size: 1.1rem;
+    color: rgba(21, 50, 67, .7);
+}
+
+.form-control:focus,
+.form-control:active,
+.form-select:focus,
+.form-select:active,
+.widget-checkbox:focus,
+.widget-checkbox:active {
+    box-shadow: 0 0 0 0.25rem #D1D1C7;
+    outline: none;
+    border-color: #153243;
+}
+
+.StripeElement,
+.form-control,
+.form-select {
+    box-sizing: border-box;
+    height: 3.5rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid #582DD2;
+    border-radius: 0px;
+    background-color: #EDEDE9;
+    color: #153243;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.form-control {
+    font-size: 1.25rem;
+
+}
+
+.text-checkout {
+    color:#D02C75;
+    font-size: 1.5rem;
+}
+
+.checkout-item, .form-check-label {
+    color: #fff;
+}
+
+.checkout-quantity {
+    color: #582DD2;
+    font-size: 1.3rem;
+}
+
+.text-price {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.bag-total-price {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 8rem;
+}
 
 /* -------------- */
 
