@@ -1,0 +1,1 @@
+web: gunicorn devfab.wsgi:application
