@@ -537,6 +537,12 @@ a {
 
 .confirm-text {
     color: #fff;
+    font-size: 1.8rem;
+}
+
+.confirm-total {
+    color: #fff;
+    font-size: 1.8rem;
 }
 
 /* Stripe */

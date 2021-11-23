@@ -46,30 +46,73 @@
                             </p>
                         </div>
                         <div class="col-6">
-                            <p class="fs-4 mt-4 confirm-text">Billing Address <br>
-                                <span class="fs-5">
-                                    {{ order.street_address_1 }}
-                                </span><br>
-                                {% if order.street_address_2 %}
-                                    <span class="fs-5">
-                                        {{ order.street_address_2 }}
-                                    </span><br>
-                                {% endif %}
-                                <span class="fs-5">
-                                    {{ order.town_or_city }}
-                                </span><br>
-                                <span class="fs-5">
-                                    {{ order.county }}
-                                </span><br>
-                                {% if order.eircode %}
-                                    <span class="fs-5">
-                                        {{ order.eircode }}
-                                    </span><br>
-                                {% endif %}
-                                <span class="fs-5">
-                                    {{ order.country }}
-                                </span><br>
-                            </p>
+                            
+                    
+                        
+                        <h4 class="confirm-text mb-3">Billing info</h4>
+                        
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.street_address1 }}</p>
+                        </div>
+                    
+
+                    {% if order.street_address2 %}
+                    <div class="row">
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.street_address1 }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if order.county %}
+                    <div class="row">
+                        
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.county }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="row">
+                        
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.town_or_city }}</p>
+                        </div>
+                    </div>
+
+                    {% if order.postcode %}
+                    <div class="row">
+                       
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.postcode }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="row">
+                        
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.country }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                       
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="confirm-text">{{ order.phone_number }}</p>
+                        </div>
+                    </div>
+
+                
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 text-black font-weight-bold">Order Total</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">{{ order.order_total }}</p>
+                        </div>
+                    </div>
                         </div>
                     </div>
                 </div>
@@ -79,6 +122,7 @@
                         <h3 class="fs-2">Your Items</h3>
                         <hr>
                         {% for item in order.lineitems.all %}
+                        
                         
                         <div class="row">
                             <div class="col-2 mb-1">
@@ -104,7 +148,7 @@
                     <div class="row mt-4">
                         <div class="col-6 offset-6">
                             <hr class="mx-2">
-                            <p class="confirm-text"> Total Price : € {{ order.order_total|intcomma }}</p>
+                            <p class="confirm-total"> Total Price : € {{ order.order_total|intcomma }}</p>
                             </h4>
                         </div>
                     </div>
@@ -113,9 +157,10 @@
             <div class="row">
                 <div class="col">
                   <div class="flex-center mt-5">
-                        <a  href="{% url 'services' %}"
-                            class="item-link-light item-link-button  flex-center">Back to Shop
-                        </a>
+                    <button class="service-keep-shop service-link-button">
+                        <a href="{% url 'services' %}" class="service-link-button">Back to
+                            Shopping</a>
+                        </button>
                   </div>
                 </div>
             </div>
