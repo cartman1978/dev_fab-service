@@ -149,9 +149,37 @@
 - #### Images 
 
   - The majority of images I have used were obtained from Unsplash.
-  - I've used three main hero images on the landing page to give the site a cool appearance upon opening.
+  - I've used four main box images on the hero page.
   - I then found images of web service items  which I used to create my stock items for the e-commerce part of the site.    
 
 - #### Icons 
   - I've used icons in this project for the navigation on mobile sites and the social media links in the footer.
   - All icons have been obtained from Font Awsome.
+
+  
+
+  ## Technologies used.
+
+- The application was built on the Django full-stack framework.
+- Each app then has a views.py, urls.py file to create the pages it needs.
+- Then to create the database models a models.py file is used.
+- If there are any forms needed they are then created in the forms.py file.
+- Stripe has been used for the payment function of the e-commerce shop.
+
+
+### Languages Used.
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+  - HTML5 was used to create the content and base of each page.
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+  - CSS3 was used to then style the page and make it responsive through media queries, and interactive through using CSS transitions.
+
+- [javaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - javaScript was used throughout the website to make the site interactive.
+
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+  - Python was used to build the backend functionality of the web app.
+ 
