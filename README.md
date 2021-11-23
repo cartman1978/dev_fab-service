@@ -183,3 +183,53 @@
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
   - Python was used to build the backend functionality of the web app.
  
+
+ ### Django and Django extensions used
+
+- [Django](https://www.djangoproject.com/)
+  - Django was used to create the project.
+
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/)
+  - Django allauth was used to create the user sign-in function for the site.
+
+- [Django Allauth Social Login](https://django-allauth.readthedocs.io/en/latest/providers.html/)
+  - Django allauth Social login function was used to allow the user to sign up, or log in with Facebook.
+
+- [Django Countries](https://pypi.org/project/django-countries/)
+  - Django Countries was used for the countries select field in the order form.
+
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Django Crispy Forms were used to utilise the bootstrap form classes.
+
+- [Django Coverage](https://pypi.org/project/django-coverage/)
+
+  - Django Coverage was used when testing to form a testing report.
+
+
+### Frameworks Libraries and Programs.
+
+- [Stripe](https://stripe.com/ie)
+
+  - CStripe has been used for the payment section of the site.
+
+- [Heroku](https://signup.heroku.com/)
+
+  - Heroku was used to deploy the website.
+[Bootstrap 5](https://getbootstrap.com/)
+
+  - Bootstrap 5 was used for its grid system and its form inputs and its helper classes.
+
+- [Quick Database Diagrams](https://www.quickdatabasediagrams.com/)
+
+  - I used quick database diagrams to make a diagram of my database schema.
+  
+- [Github](https://github.com/)
+
+  - Github was used to create and store the project repository.
+- [Balsamiq](https://balsamiq.com/)
+
+  - Balsamiq was used to create Wireframes for the project during the initial planning stage.
+
+- [Am I responsive](http://ami.responsivedesign.is/)
+
+  - Am I responsive was used to taking screenshots of the page at different screen sizes.
