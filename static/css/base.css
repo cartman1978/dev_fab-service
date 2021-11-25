@@ -495,7 +495,7 @@ a {
 .form-control,
 .form-select {
     box-sizing: border-box;
-    height: 3.5rem;
+    height: 4.5rem;
     padding: 1rem 1.2rem;
     border: 1px solid #582DD2;
     border-radius: 0px;
@@ -503,6 +503,16 @@ a {
     color: #153243;
     margin-top: 1rem;
     border-radius: 2rem;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #582DD2 !important;
 }
 
 .form-control {

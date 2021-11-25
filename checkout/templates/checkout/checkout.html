@@ -85,16 +85,17 @@
                     <fieldset class="px-2 mb-4">
                         <legend class="fieldset-label small text-black px-2 w-auto">Billing Info</legend>
                         {{ order_form.phone_number | as_crispy_field }}
-                        {{ order_form.country | as_crispy_field }}
-                        {{ order_form.postcode | as_crispy_field }}
+                        {{ order_form.street_address1 | as_crispy_field }}
+                        {{ order_form.street_address2 | as_crispy_field }}
+                       
                         <div class="row">
-                            <div class="col-6 pe-2">
-                                {{ order_form.street_address1 | as_crispy_field }}
-                                {{ order_form.street_address2 | as_crispy_field }}
-                            </div>
                             <div class="col-6 pe-2">
                                 {{ order_form.town_or_city | as_crispy_field }}
                                 {{ order_form.county | as_crispy_field }}
+                            </div>
+                            <div class="col-6 pe-2">
+                                {{ order_form.postcode | as_crispy_field }}
+                                {{ order_form.country | as_crispy_field }}  
                             </div>
                         </div>
                        
