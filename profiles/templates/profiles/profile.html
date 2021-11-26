@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="col flex-center page-heading">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -23,5 +23,23 @@
                 <hr>
             </div>
         </div>
-        {{ profile }}
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p class="profile-billing">Your Billing details</p>
+                <form class="login allauth-form" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button class="service-checkout-shop mb-2">Update Information</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p>Order History</p>
+                {{ orders }}
+            </div>
+        </div>
+        
+{% endblock %}
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
