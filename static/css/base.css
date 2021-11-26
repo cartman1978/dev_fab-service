@@ -371,7 +371,39 @@ a {
 
 /* Login */
 
+.allauth-col {
+    flex-direction: column;
+    margin: 2rem 0 5rem 0;
+}
 
+.allauthform-col {
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.account-info {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.signup-link {
+    color: #F3812F;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.allauth-form {
+    margin: auto;
+    max-width: 40rem;
+}
+
+.bag-links {
+    margin: 5rem;
+}
+
+#home-login {
+    margin-right: 1rem;
+}
 
 /* Bag */
 
