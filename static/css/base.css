@@ -560,15 +560,24 @@ select option[value=""] {
 .text-checkout {
     color:#D02C75;
     font-size: 1.5rem;
+    
 }
 
-.checkout-item, .form-check-label {
+.form-check-label {
     color: #fff;
 }
 
 .checkout-quantity {
     color: #582DD2;
     font-size: 1.3rem;
+}
+
+.hr-checkout {
+    border: 1px solid #D02C75;
+}
+
+.checkout-description {
+    color: #F3812F;
 }
 
 .text-price {
@@ -579,7 +588,6 @@ select option[value=""] {
 .bag-total-price {
     color: #fff;
     font-size: 1.8rem;
-    margin-left: 8rem;
 }
 
 .confirm-text {

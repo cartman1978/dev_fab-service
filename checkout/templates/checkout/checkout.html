@@ -15,9 +15,9 @@
     
     <div class="container page-container">
         <div class="row">
-            <div class="col flex-center page-heading">
-               <h1>Checkout</h1>
-            </div>
+        <div class="col flex-center page-heading">
+            <h1>Checkout</h1>
+        </div>
         
 
         <div class="row mt-3">
@@ -26,35 +26,33 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="flex-center">Your Bag</h2>
-                            <hr class="mx-4">
+                            <hr class="mx-4 hr-checkout">
                         </div>
                        
-                        <p class="text-checkout">Your Bag has ({{ item_count }})</p>
-                        <div class="col-7 offset-2">
-                            <p class="mb-1 mt-0 small text-checkout">Item</p>
-                        </div>
-                        <div class="col-3 text-right">
-                            <p class="mb-1 mt-0 small text-checkout">Subtotal</p>
+                        <div class="col-9 offset-1">
+                            <p class="fs-5 text-checkout">Your Bag has {{ item_count }}
+                                {% if item_count == 1 %}
+                                    item
+                                {% else %}
+                                    items
+                                {% endif %}
+                            </p>
                         </div>
                     </div>
                     <div class="bag-items-wrapper">
                         {% for item in bag_items %}
-                        <div class="row">
-                            <div class="col-2 mb-1">
-                                <a href="">
-                                    {% if item.item.image %}
-                                        <img class="w-100" src="{{ MEDIA_URL }}{{ item.item.image.url }}" alt="{{ product.name }}">
-                                    {% else %}
-                                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                    {% endif %}
-                                </a>
+                        <div class="row mt-2">
+                            <div class="offset-1 col-3">
+                                {% if item.item.image %}
+                                <img class="table-image" src="{{ MEDIA_URL }}{{ item.item.image.url }}" alt="{{ product.name }}">
+                            {% else %}
+                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            {% endif %}
                             </div>
-                            <div class="col-7">
-                                <p class="fs-4 checkout-item">{{ item.item.name }}</p>
-                                <p class="my-0 small checkout-quantity">Qty: {{ item.quantity }}</p>
-                            </div>
-                            <div class="col-3 text-right">
-                                <p class="my-0 small text-price">€ {{ item.item.price  }}</p>
+                            <div class=" offset-2 col-6 ">
+                                <p class="fs-4 checkout-description">{{ item.item.name }}</p>
+                                <p class=" fs-5 text-price">Quantity: {{ item.quantity }}</p>
+                                <p class=" fs-5 text-price">Price: €{{ item.item.price|intcomma }}</p>
                             </div>
                         </div>
                         {% endfor %}
@@ -64,7 +62,7 @@
             
                 <div class="row mt-4">
                     <div class="col-6 offset-6">
-                        <hr class="mx-2">
+                        <hr class="mx-2 hr-checkout">
                         <p class="bag-total-price">
                             Total Price : € {{ total|floatformat:2|intcomma }}
                         </p>
@@ -130,23 +128,22 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
-							<span class="font-weight-bold">Adjust Bag</span>
-						</a>
-						<p class="small text-danger my-0">
-							<span class="icon">
-								<i class="fas fa-exclamation-circle"></i>
-							</span>
-							<span>Your card will be charged <strong>€ {{ total|intcomma }}</strong></span>
-                            <button type="submit" id="submit-order" class="service-checkout-shop">
-                                Checkout
+                    <div class="checkout-submit-links flex-row-between">
+                            <button class="service-checkout-shop">
+                                <a href="{% url 'view_bag' %}" class="item-link-light item-link-button  flex-center">
+                                    Adjust Cart</a>
                             </button>
-						</p>
-					</div>
+                           
+                            <button type="submit" id="submit-order" class="service-keep-shop">
+                                Complete Order
+                            </button>
+                    </div>
+                    <p class="small text-danger my-0 mt-3">
+                        <span class="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>
+                        <span>Your card will be charged <strong>€ {{ total|intcomma }}</strong></span>
+                        </p>
                 </form>
             </div>
         </div>
