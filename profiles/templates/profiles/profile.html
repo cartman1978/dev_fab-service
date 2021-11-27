@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-6">
                 <p class="profile-billing">Your Billing details</p>
                 <form class="login allauth-form" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
@@ -32,12 +32,49 @@
                     <button class="service-checkout-shop mb-2">Update Information</button>
                 </form>
             </div>
-            <div class="col-12 col-lg-6">
-                <p>Order History</p>
-                {{ orders }}
+            <div class="col-12 col-md-6">
+                <p class="td-order">Order History</p>
+                <div class="order-history table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order No</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Items</th>
+                                <th scope="col">Order Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           {% for order in orders %}
+                           <tr>
+                               <td>
+                                   <a class="order-link" 
+                                   href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+                                       {{ order.order_number|truncatechars:6 }}</a>
+                               </td>
+                               <td class="td-order">
+                                   {{ order.date }}
+                               </td>
+                               <td>
+                                <ul class="list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                        <li class="td-order">
+                                            {{ item.item.name }} x {{ item.quantity }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                               <td class="td-order">
+                                  € {{ order.order_total }}
+                               </td>
+                           </tr>
+                           {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-        
+    </div>    
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}

@@ -395,6 +395,7 @@ a {
 .allauth-form {
     margin: auto;
     max-width: 40rem;
+    margin-bottom: 3rem;
 }
 
 .bag-links {

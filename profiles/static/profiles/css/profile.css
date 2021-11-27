@@ -1,6 +1,7 @@
 .order-history {
-    max-height: 416PX; /* HEIGHT OF PROFILE FORM + SUBMIT BUTTON*/ 
+    max-height: 30rem; /* HEIGHT OF PROFILE FORM + SUBMIT BUTTON*/ 
     overflow-y: auto;
+    margin: 2rem;
 }
 
 #profile-update-form .form-control {
@@ -26,4 +27,13 @@
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 3rem;
+}
+
+.order-link {
+    color: #F3812F;
+}
+
+.td-order {
+    color: #fff;
+    font-size: 1.3rem;
 }
