@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
+{% endblock %}
 {% load bag_tools %}
 {% block title %}
 Your Cart
@@ -87,12 +90,11 @@ Your Cart
                     <tr>
                         <td colspan="5" class="pt-4  text-end">
                             <p class="total-price">Total: € {{ total }}</p>
-                            <!-- <p class="bag-total-price">Total Price : € </p> -->
                         </td>
                     </tr>
                 </table>
                 <div class="bag-links d-flex justify-content-end">
-                    <button class="service-keep-shop service-link-button  flex-center">
+                    <button class="bag-btn">
                     <a href="{% url 'services' %}" class="item-link-light item-link-button  flex-center">Keep
                         Shopping</a>
                     </button>
@@ -104,7 +106,7 @@ Your Cart
             {% else %}
                 <div class="bag-no-items text-center">
                     <p>No items in shopping bag</p>
-                    <button class="service-keep-shop service-link-button">
+                    <button class="bag-btn service-link-button">
                     <a href="{% url 'services' %}" class="service-link-button">Keep
                         Shopping</a>
                     </button>

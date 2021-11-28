@@ -1,0 +1,25 @@
+.top-nav {
+    background: #D02C75;
+}
+
+.bag-btn {
+    background: none;
+    border-width: 10px;
+    border-color: #F3812F;
+    border-radius: 10px;
+    
+    padding-inline: 2ch;
+    padding-block: 1ch;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #F3812F;
+    width: 25rem;
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+.bag-btn a {
+    text-decoration: none;
+    color: #F3812F;
+}
+
