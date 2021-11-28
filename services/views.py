@@ -1,4 +1,5 @@
-from django.shortcuts import (render, get_object_or_404, redirect)
+from django.contrib import messages
+from django.shortcuts import (render, get_object_or_404, redirect, reverse)
 
 
 from .models import Item, Category
@@ -45,7 +46,17 @@ def single_item(request, item_id):
 
 def add_item(request):
     """ Add a item to the store """
-    form = ItemForm()
+    if request.method == 'POST':
+        form = ItemForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Item successfully added!')
+            return redirect(reverse('add_item' ))
+        else:
+            messages.error(request, 'Failed to add Item. Please try again')
+    else:
+        form = ItemForm()
+        
     template = 'services/add_service.html'
     context = {
         'form': form,
