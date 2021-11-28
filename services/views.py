@@ -1,7 +1,8 @@
-from django.shortcuts import (render, get_object_or_404)
+from django.shortcuts import (render, get_object_or_404, redirect)
 
 
 from .models import Item, Category
+from .forms import ItemForm
 
 
 def all_items(request):
@@ -40,3 +41,14 @@ def single_item(request, item_id):
     }
 
     return render(request, 'services/single_service.html', context)
+
+
+def add_item(request):
+    """ Add a item to the store """
+    form = ItemForm()
+    template = 'services/add_service.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
