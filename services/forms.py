@@ -1,18 +1,14 @@
 from django import forms
 from .models import Item, Category
-
+from .widgets import CustomClearableFileInput
 
 class ItemForm(forms.ModelForm):
 
     class Meta:
         model = Item
-        fields = "__all__"
+        fields = '__all__'
 
-    image = forms.ImageField(
-        label="Image",
-        required=False,
-        
-    )
+    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

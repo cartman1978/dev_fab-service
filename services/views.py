@@ -74,7 +74,7 @@ def add_item(request):
 @login_required
 def edit_item(request, item_id):
     """ Edit item in the store """
-    if not request.use.is_superuser:
+    if not request.user.is_superuser:
         messages.error(request, 'Sorry only website owner can do that.')
         return redirect(reverse('home'))
     
