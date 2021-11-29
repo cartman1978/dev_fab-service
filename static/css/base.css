@@ -779,6 +779,23 @@ select option[value=""] {
     font-weight: 700;
 }
 
+.card-super {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card-super a {
+    padding: 1rem;
+    position: relative;
+    z-index: 999;
+    background: #582DD2;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
 /* Loading */
 
 #loading-overlay {

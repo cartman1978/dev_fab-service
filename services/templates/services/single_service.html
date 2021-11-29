@@ -28,6 +28,7 @@
                 <h5>{{ item.description }}</h5>
                 <hr>
                 <p>€ {{ item.price }}</p>
+               
                 <form class="form service-form mt-3" action="{% url 'add_to_bag' item.id %}" method="POST">
                     {% csrf_token %}
                     <div class=" flex-row-between service-quantity">

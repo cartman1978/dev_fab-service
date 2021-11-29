@@ -34,13 +34,16 @@
                     <hr>
                     <p class="service-description">{{ item.description }}</p>
                 </div>
-                <div class="card-footer pt-0 border-0 text-left">
-                    <div class="row">
+                {% if request.user.is_superuser %}
+                <div class="card-super">
                     
-                        <a href="" class="col-5 btn btn-sm rent--btn"><i class="bi bi-cart"></i></a>
-                    </div>
+                        <a href="{% url 'edit_item' item.id %}">Edit</a>
+                        <a id="super-delete" href="{% url 'delete_item' item.id %}">Delete</a>
+                    
                 </div>
+                {% endif %}
             </div>
+           
         </div>
         {% endfor %}
     </div>
