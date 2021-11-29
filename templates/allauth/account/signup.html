@@ -5,6 +5,7 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block inner_content %}
+<div class="row allauth-row">
 <h2 class="logo-font mb-4">{% trans "Sign Up" %}</h2>
 <hr>
 
@@ -18,8 +19,13 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'account_login' %}">Back to Login</a>
-  <button class="service-keep-shop service-link-button" type="submit">{% trans "Sign Up" %}</button>
+  <div class="bag-links d-flex">
+    <button class="bag-btn service-link-button" id="home-login">
+      <a class="service-link-button" href="{% url 'account_login' %}">Back to Login</a>
+    </button>
+      <button class="service-keep-shop service-link-button" type="submit">{% trans "Sign Up" %}</button>
+  </div>
 </form>
+</div>
 
 {% endblock %}
