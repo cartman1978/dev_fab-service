@@ -938,14 +938,14 @@ strong {
 
 .newsletter-form-input {
     width: 60%;
-    height: 4rem;
+    height: 4.5rem;
     background-color: #EDEDE9;
-    border: .1rem solid #153243;
+    border: .1rem solid #F3812F;
     text-align: center;
     font-size: 1.25rem;
     margin-right: 1rem;
     -webkit-appearance: none;
-    border-radius: 0;
+    border-radius: 2rem;
 }
 
 .newsletter-form-input:focus {
@@ -953,12 +953,12 @@ strong {
 }
 
 .newsletter-form button[type="submit"] {
-    color:#F3812F;
+    color:#fff;
     background-color: transparent;
     height: 3rem;
     padding: 0 1rem;
     font-size: 1.5rem;
-    border: 1px solid #F3812F;
+    border: 1px solid #fff;
     border-radius: 2rem;
 }
 
