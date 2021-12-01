@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-4=j73ywzevr5n=d085kpedcr=0@6e0t%s7=3k-8_dy7-$4gcm7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['devfab.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -144,7 +144,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 
 
