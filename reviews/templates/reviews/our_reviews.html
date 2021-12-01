@@ -5,7 +5,7 @@
 Reviews
 {% endblock %}
 
-{% block content %}
+{% block main_content %}
 <div class="container page-container">
     <div class="row">
         <div class="col flex-center page-heading">
@@ -98,11 +98,12 @@ Reviews
                         <p><strong>{{review.reviewer}}</strong></p>
                         {% if user == review.reviewer %}
                             <a href="{% url 'edit_review' review.id %}">Edit</a>
+                            <a href="{% url 'delete_review' review.id %}">Delete</a>
                             <button type="button" class="text-danger fs-5 review-delete" data-bs-toggle="modal"
                                 data-bs-target="#review-deleteModal-{{review.id}}">
                                 Delete
                             </button>
-                            <div class="modal fade" id="review-deleteModal-{{review.id}}" tabindex="-1"
+                            <!-- <div class="modal fade" id="review-deleteModal-{{review.id}}" tabindex="-1"
                                 aria-labelledby="review-deleteModalLabel-{{review.id}}" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -127,7 +128,7 @@ Reviews
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         {% endif %}
                     </div>
                 </div>
@@ -162,4 +163,8 @@ Reviews
         </div>
     </div>
 </div>
+{% endblock %}
+{% block other_end_js %}
+{{ block.super }}
+<script src="{% static 'js/quantity_number.js' %}"></script>
 {% endblock %}

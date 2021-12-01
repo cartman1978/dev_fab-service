@@ -970,8 +970,64 @@ strong {
     margin: 5% 0;
 }
 
+.review-container {
+    margin-bottom: 7.5rem;
+}
+
+.review-title h2 {
+    margin: 4rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.stars {
+    flex-direction: row;
+    margin: 2.5% 0;
+}
+
+.stars i {
+    font-size: 1.5rem;
+}
+
+.review {
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.review p,
+.review p strong {
+    font-size: 1.25rem;
+}
+
 .review p {
+    margin: 1rem 4rem;
+    text-align: center;
     color: #fff;
+}
+
+
+.modal-button {
+    height: 3.25rem;
+    width: 15rem;
+    border: .1rem solid #153243;
+    transition: all .5s ease-in;
+}
+
+.modal-content {
+    border-radius: 0;
+    margin-top: 10rem;
+}
+
+.review-delete,
+.comment-delete {
+    text-decoration: underline;
+}
+
+.modal-button {
+    height: 3.25rem;
+    width: 15rem;
+    border: .1rem solid #60d02c;
+    transition: all .5s ease-in;
 }
 
 /* Footer */
