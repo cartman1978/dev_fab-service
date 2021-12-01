@@ -863,28 +863,35 @@ select option[value=""] {
     margin: 2rem 3rem;
 }
 
+.review-link {
+    color: #D02C75;
+    border: 1px solid #D02C75;
+    padding: 1rem;
+}
+
+.delete-link {
+    color: #D02C75;
+    font-size: 1.2rem;
+}
+
+.edit-link {
+    color: #F3812F;
+    font-size: 1.2rem;
+}
+
 .review {
     flex-direction: column;
     margin: 5% 0;
 }
 
-.title-review h2 {
-    margin: 4rem 0;
-    font-size: 3rem;
-    text-align: center;
-    color: #190E5F;
-    font-weight: 700;
-}
-
-.stars {
-    flex-direction: row;
-    margin: 2.5% 0;
-    color: #190E5F;
+.page-text {
+    color: #fff;
+    font-size: 1.4rem;
 }
 
 .stars i {
     font-size: 1.6rem;
-    color: #D02C75;
+    color: #fff;
 }
 
 .review p {
@@ -914,6 +921,8 @@ strong {
     border: 1px solid #190E5F;
     border-radius: 2rem;
 }
+
+
 
 /* Newsletter section */
 
@@ -1003,6 +1012,12 @@ strong {
     margin: 1rem 4rem;
     text-align: center;
     color: #fff;
+    font-size: 1.5rem;
+}
+
+.email-confirm {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 
