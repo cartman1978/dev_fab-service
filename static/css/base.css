@@ -884,6 +884,7 @@ select option[value=""] {
 
 .stars i {
     font-size: 1.6rem;
+    color: #D02C75;
 }
 
 .review p {
@@ -960,6 +961,17 @@ strong {
     font-size: 1.5rem;
     border: 1px solid #fff;
     border-radius: 2rem;
+}
+
+/* Review */
+
+.review {
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.review p {
+    color: #fff;
 }
 
 /* Footer */
