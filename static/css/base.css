@@ -654,7 +654,21 @@ select option[value=""] {
     background: url(/media/landing.jpg);
     width: 10rem;
     height: 10rem;
+    position: absolute;
 }
+
+.image, .hero-box {
+    position: relative;
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .box-service-2::before {
     content: '';
