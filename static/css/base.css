@@ -650,6 +650,12 @@ select option[value=""] {
     border-radius: 16px;
 }
 
+.hero-box {
+    background: url(/media/landing.jpg);
+    width: 10rem;
+    height: 10rem;
+}
+
 .box-service-2::before {
     content: '';
     position: absolute;
