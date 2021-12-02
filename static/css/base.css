@@ -726,7 +726,7 @@ select option[value=""] {
     position: absolute;
 }
 
-.image img {
+/* .image img {
     position: relative;
     display: flex;
     width: 11rem;
@@ -736,7 +736,7 @@ select option[value=""] {
     margin-top: 5rem;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
 @keyframes animate 
