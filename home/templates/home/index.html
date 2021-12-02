@@ -32,7 +32,8 @@
                 <p class="service">E-commerce</p> 
                 <div class="image">
                     <a href="{% url 'services' %}?category=ecommerce">
-                        <img src="{{ MEDIA_URL }}ecommerce.jpg" alt="web-application">
+                        {% load static %}
+                        <img src="{% static 'media/ecommerce.jpg' %}" alt="web-application">
                     </a>
                 </div>
             </div>
