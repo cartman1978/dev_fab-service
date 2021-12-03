@@ -1351,6 +1351,16 @@ td p {
 
 /* Media Queries */
 
+@media (min-width: 375px) {
+    .p-message {
+        margin-right: 24rem;
+    }
+
+    .message-container {
+        width: 35rem;
+    }
+}
+
 @media (min-width: 768px) {
     .logo {
         display: block;
@@ -1368,6 +1378,11 @@ td p {
     .box-service-3 {
         margin-top: 18rem;
     }
+
+    .message-container {
+        width: 45rem;
+    }
+
 }
 
 @media (min-width: 992px) {
