@@ -164,15 +164,19 @@
                 </div>
             </div> -->
 
-            <div class="bag-links d-flex justify-content-end">
-                <button class="bag-btn">
-                <a href="{% url 'services' %}" class="item-link-light item-link-button  flex-center">Back to
-                    Shopping</a>
+           <div class="row">
+               <div class="col">
+                <div class="bag-links d-flex justify-content-end">
+                    <button class="bag-btn">
+                    <a href="{% url 'services' %}" class="item-link-light item-link-button  flex-center">Back to
+                        Shopping</a>
+                    </button>
+                    <button type="submit" class="service-checkout-shop flex-center">
+                    <a href="{% url 'profile' %}" class="item-link-dark item-link-button  flex-center"> Back to Profile</a>
                 </button>
-                <button type="submit" class="service-checkout-shop flex-center">
-                <a href="{% url 'profile' %}" class="item-link-dark item-link-button  flex-center"> Back to Profile</a>
-            </button>
-            </div>
+                </div>
+               </div>
+           </div>
            
         </div>
     </div>
