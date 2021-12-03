@@ -725,6 +725,10 @@ select option[value=""] {
     animation: animate 4s linear infinite;
 }
 
+a .service {
+    text-decoration: none;
+}
+
 
 .image {
     position: absolute;
