@@ -725,11 +725,7 @@ select option[value=""] {
     animation: animate 4s linear infinite;
 }
 
-#service {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.6rem;
-}
+
 
 /* .service a {
     text-decoration: none;
@@ -825,7 +821,8 @@ select option[value=""] {
 
 .service {
     color: #fff;
-    margin-bottom: 13rem;
+    /* margin-bottom: 13rem; */
+    margin: 1rem;
     font-size: 1.4rem;
     font-weight: 700;
 }
