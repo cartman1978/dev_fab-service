@@ -650,13 +650,13 @@ select option[value=""] {
     border-radius: 16px;
 }
 
-/* .hero-box {
+.hero-box {
     background: url(/media/fullstackbox.jpg) no-repeat center center;
     background-size: cover;
     width: 10rem;
     height: 10rem;
     position: absolute;
-} */
+}
 
 .image {
     position: relative;
@@ -884,7 +884,7 @@ select option[value=""] {
 }
 
 .review-section {
-    background-color: #D02C75;
+    background-color:#F3812F;
 }
 
 .info-col {
