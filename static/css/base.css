@@ -658,7 +658,31 @@ select option[value=""] {
     position: absolute;
 }
 
-.image, .hero-box {
+.hero-box-2 {
+    background: url(/media/ecommerce.jpg) no-repeat center center;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+}
+
+.hero-box-3 {
+    background: url(/media/responsive.png) no-repeat center center;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+}
+
+.hero-box-4 {
+    background: url(/media/socialmarketing.png) no-repeat center center;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+}
+
+.image, .hero-box, .hero-box-2, .hero-box-3, .hero-box-4 {
     position: relative;
     display: flex;
     width: 11rem;
