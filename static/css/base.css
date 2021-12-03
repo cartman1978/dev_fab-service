@@ -886,12 +886,12 @@ select option[value=""] {
 }
 
 .review-section {
-    background-color:#D02C75;
+    background-color:#fff;
 }
 
 .review-header {
     margin: 4rem;
-    color: #fff;
+    color: #582DD2;
 }
 
 .info-col {
@@ -934,7 +934,7 @@ select option[value=""] {
 
 .stars i {
     font-size: 1.6rem;
-    color: #fff;
+    color: #582DD2;
 }
 
 .review p {
@@ -949,6 +949,10 @@ strong {
     color: #582DD2;
 }
 
+#review-name {
+    color: #D02C75;
+}
+
 .review-button {
     width: 15rem;
     height: 5rem;
@@ -960,8 +964,8 @@ strong {
 }
 
 .review-button-color {
-    color: #190E5F;
-    border: 1px solid #190E5F;
+    color: #582DD2;
+    border: 2px solid #582DD2;
     border-radius: 2rem;
 }
 
@@ -1054,7 +1058,7 @@ strong {
 .review p {
     margin: 1rem 4rem;
     text-align: center;
-    color: #fff;
+    color: #582DD2;
     font-size: 1.5rem;
 }
 
