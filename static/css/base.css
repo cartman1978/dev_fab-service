@@ -728,13 +728,14 @@ select option[value=""] {
 #service {
     text-decoration: none;
     color: #fff;
+    font-size: 1.6rem;
 }
 
-.service a {
+/* .service a {
     text-decoration: none;
     color: #fff;
     font-size: 1.6rem;
-}
+} */
 
 
 .image {
