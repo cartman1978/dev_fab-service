@@ -650,14 +650,15 @@ select option[value=""] {
     border-radius: 16px;
 }
 
-.hero-box {
-    background: url(/media/fullstackbox.jpg);
+/* .hero-box {
+    background: url(/media/fullstackbox.jpg) no-repeat center center;
+    background-size: cover;
     width: 10rem;
     height: 10rem;
     position: absolute;
-}
+} */
 
-.image, .hero-box {
+.image {
     position: relative;
     display: flex;
     width: 11rem;
@@ -667,6 +668,8 @@ select option[value=""] {
     margin-top: 5rem;
     align-items: center;
     justify-content: center;
+    background: url(/media/fullstackbox.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 
