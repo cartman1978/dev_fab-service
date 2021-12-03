@@ -658,7 +658,7 @@ select option[value=""] {
     position: absolute;
 }
 
-.image {
+.image, .hero-box {
     position: relative;
     display: flex;
     width: 11rem;
