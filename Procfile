@@ -1,1 +1,1 @@
-web: gunicorn dev_fabio.wsgi:application --log-static -
+web: gunicorn dev_fabio.wsgi:application
