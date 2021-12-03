@@ -665,7 +665,6 @@ select option[value=""] {
     height: 11rem;
     border-radius: 50%;
     z-index: 1;
-    margin-top: 5rem;
     align-items: center;
     justify-content: center;
 }
