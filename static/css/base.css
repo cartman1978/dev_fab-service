@@ -1036,7 +1036,7 @@ strong {
     text-align: center;
 }
 
-.review-title p {
+p .review-title {
     color: #fff;
 }
 
