@@ -1036,6 +1036,14 @@ strong {
     text-align: center;
 }
 
+.review-title {
+    color: #fff;
+}
+
+#user-review {
+    color: #fff;
+}
+
 .stars {
     flex-direction: row;
     margin: 2.5% 0;

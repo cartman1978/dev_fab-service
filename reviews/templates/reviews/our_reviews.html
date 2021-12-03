@@ -95,7 +95,7 @@ Reviews
                             {% endif %}
                         </div>
                         <p class="review-title">{{ review.review }}</p>
-                        <p><strong>{{review.reviewer}}</strong></p>
+                        <p><strong id="user-review">{{review.reviewer}}</strong></p>
                         {% if user == review.reviewer %}
                             <a class="edit-link" href="{% url 'edit_review' review.id %}">Edit</a>
                             <a class="delete-link" href="{% url 'delete_review' review.id %}">Delete</a>
