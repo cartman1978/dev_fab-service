@@ -20,9 +20,10 @@
             <div class="box-service-1">
                
                <div class="image">
+                <p class="service"> Web Development Application
                 <a href="{% url 'services' %}?category=webapp">
-                    <p class="service"> Web Development Application</p>
                 </a>
+            </p>
             </div>
             </div>
         </div>
@@ -32,8 +33,7 @@
                 <p class="service">E-commerce</p> 
                 <div class="image">
                     <a href="{% url 'services' %}?category=ecommerce">
-                        {% load static %}
-                        <img src="{% static 'ecommerce.jpg' %}" alt="web-application">
+                        
                     </a>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 <p class="service">Other Services</p>
                 <div class="image">
                     <a href="{% url 'services' %}?category=other">
-                        <img src="/media/service.jpg" alt="web-application">
+                        
                     </a>
                 </div>
             </div>

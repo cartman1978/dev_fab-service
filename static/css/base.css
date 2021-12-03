@@ -668,8 +668,6 @@ select option[value=""] {
     margin-top: 5rem;
     align-items: center;
     justify-content: center;
-    background: url(/media/fullstackbox.jpg) no-repeat center center;
-    background-size: cover;
 }
 
 
