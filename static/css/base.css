@@ -670,6 +670,9 @@ select option[value=""] {
     justify-content: center;
 }
 
+.image p {
+    text-decoration: none;
+}
 
 .box-service-2::before {
     content: '';
