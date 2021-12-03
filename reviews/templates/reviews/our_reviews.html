@@ -94,7 +94,7 @@ Reviews
                                 <i class="far fa-star" aria-hidden="true"></i>
                             {% endif %}
                         </div>
-                        <p class="review-title">{{ review.review }}</p>
+                        <p id="user-review">{{ review.review }}</p>
                         <p><strong id="user-review">{{review.reviewer}}</strong></p>
                         {% if user == review.reviewer %}
                             <a class="edit-link" href="{% url 'edit_review' review.id %}">Edit</a>
