@@ -18,7 +18,7 @@ html {
 } */
 
 body {
-    background-color: #190E5F;
+    background-color: #582DD2;
     min-height: 100vh;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -639,7 +639,7 @@ select option[value=""] {
     position: absolute;
     width: 150px;
     height: 340%;
-    background: linear-gradient(#60d02c, #582DD2);
+    background: linear-gradient(#60d02c, #190E5F);
     animation: animate 4s linear infinite;
 }
 
@@ -728,7 +728,7 @@ select option[value=""] {
     content: '';
     position: absolute;
     inset: 6px;
-    background: #582DD2;
+    background: #190E5F;
     border-radius: 16px;
 }
 
@@ -801,7 +801,7 @@ select option[value=""] {
 }
 
 .box-service-3 {
-    background-color: #582DD2;
+    background-color: #190E5F;
     height: 20rem;
     margin-top: 9rem;
     position: relative;
@@ -1086,7 +1086,7 @@ strong {
 /* Footer */
 
 .footer-section {
-    background-color: #582DD2;
+    background-color: #190E5F;
 }
 
 .footer-col {
