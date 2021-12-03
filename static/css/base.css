@@ -725,7 +725,7 @@ select option[value=""] {
     animation: animate 4s linear infinite;
 }
 
-a .service {
+.service a {
     text-decoration: none;
 }
 
