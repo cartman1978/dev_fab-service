@@ -82,7 +82,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #f5c66fd8;
+    background-color: #252525d8;
     transform: translateY(-50vh);
     transition: all .85s ease-in-out;
     z-index: 100;
@@ -121,7 +121,7 @@ body {
 
 .cross-x, .cross-y {
     height: 0.2rem;
-    background-color: #582DD2;
+    background-color: #fff;
     margin: 0.4rem 0;
     width: 3rem;
     z-index: 200;
@@ -172,7 +172,7 @@ body {
     font-size: 2.5rem;
     margin: 1rem 0;
     font-weight: 400;
-    color: #582DD2;
+    color: #fff;
     text-decoration: none;
     font-weight: 300;
     letter-spacing: .3rem;
