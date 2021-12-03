@@ -651,7 +651,7 @@ select option[value=""] {
 }
 
 .hero-box {
-    background: url(/media/landing.jpg);
+    background: url(/media/fullstackbox.jpg);
     width: 10rem;
     height: 10rem;
     position: absolute;
