@@ -459,6 +459,7 @@ a {
 .p-bag {
     font-size: 1.6rem;
     color: #fff;
+    margin-left: 1rem;
 }
 
 .custom-toast {
@@ -749,29 +750,10 @@ select option[value=""] {
 }
 
 
-
-/* .service a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.6rem;
-} */
-
-
 .image {
     position: absolute;
 }
 
-/* .image img {
-    position: relative;
-    display: flex;
-    width: 11rem;
-    height: 11rem;
-    border-radius: 50%;
-    z-index: 1;
-    margin-top: 5rem;
-    align-items: center;
-    justify-content: center;
-} */
 
 
 @keyframes animate 
@@ -1377,6 +1359,10 @@ td p {
 
     .box-service-3 {
         margin-top: 18rem;
+    }
+
+    .p-message {
+        margin-right: 34rem;
     }
 
     .message-container {
