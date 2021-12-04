@@ -1063,6 +1063,14 @@ p .review-title {
     margin: 5% 0;
 }
 
+.review-hr {
+    border: 2px solid #F3812F;
+}
+
+.review-row {
+    margin-bottom: 13rem;
+}
+
 #review-star {
     color: #fff;
 }
