@@ -1436,6 +1436,11 @@ td p {
     td p {
         font-size: 1.3rem;
     }
+
+    .top-nav-item i {
+        font-size: 2.5rem;
+    }
+    
 }
 
 @media (min-width: 1200px) {
