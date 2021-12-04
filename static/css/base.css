@@ -1045,6 +1045,10 @@ p .review-title {
     color: #fff;
 }
 
+#user-review strong {
+    color: #F3812F;
+}
+
 .stars {
     flex-direction: row;
     margin: 2.5% 0;
@@ -1076,7 +1080,7 @@ p .review-title {
     margin: 1rem 4rem;
     text-align: center;
     color: #582DD2;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .email-confirm {
