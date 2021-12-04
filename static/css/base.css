@@ -1059,6 +1059,10 @@ p .review-title {
     margin: 5% 0;
 }
 
+#review-star {
+    color: #fff;
+}
+
 .review p,
 .review p strong {
     font-size: 1.5rem;
