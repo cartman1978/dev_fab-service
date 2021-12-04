@@ -442,7 +442,7 @@ a {
 }
 
 .toast-body, .toast-header {
-    background: #582DD2;
+    background: #190E5F;
 }
 
 .bag-notification-wrapper {
@@ -478,6 +478,7 @@ a {
 .p-message {
     margin-right: 34rem;
     font-size: 1.6rem;
+    color: #fff;
 }
 
 
@@ -1377,7 +1378,7 @@ td p {
         font-weight: 500;
         color: #EDEDE9;
         text-decoration: none;
-        margin-left: 20rem;
+        margin-left: 10rem;
     }
     .side-nav {
         width: 37rem;
