@@ -58,9 +58,9 @@ Reviews
                 </button>
             </form>
             {% else %}
-                <p class="fs-2 mb-5">Please
-                    <a class="fs-2 mx-2" href="{% url 'account_login' %}"> Login</a> or
-                    <a class="fs-2 mx-2" 
+                <p class="fs-2 mb-5 review-login">Please
+                    <a class="fs-2 mx-2 review-link" href="{% url 'account_login' %}"> Login</a> or
+                    <a class="fs-2 mx-2 review-link" 
                     href="{% url 'account_signup' %}">Signup </a>To create a wishlist.</p>
             {% endif %}
         </div>
