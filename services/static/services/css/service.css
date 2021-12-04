@@ -165,3 +165,9 @@ select option {
         font-size: 1.75rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .service-container {
+        min-height: 99rem;
+    }
+}
