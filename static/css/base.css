@@ -1350,6 +1350,15 @@ td p {
 
 /* Media Queries */
 
+@media (min-width: 320px) {
+    .message-container {
+        width: 30rem;
+    }
+    .p-message {
+        margin-right: 20rem;
+    }
+}
+
 @media (min-width: 375px) {
     .p-message {
         margin-right: 24rem;
