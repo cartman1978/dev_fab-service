@@ -53,26 +53,18 @@
               </button>
               <a href="{% url 'home' %}" class="logo text-shadow">DevFab</a>
               <ul>
-                <!-- <li class="d-none d-md-block">
-                  <a href="" class="top-nav-item">Wishlist</a>
-                </li>
-                <li class="top-nav-item d-md-none">
-                  <a href="">
-                    <i class="far fa-heart" aria-hidden="true"></i>
-                    <span class="visually-hidden">Go to wishlist</span>
-                  </a>
-                </li> -->
-                <li class="top-nav-item d-none d-md-block dropdown-link">
+               
+                <!-- <li class="top-nav-item d-none d-md-block dropdown-link">
 
                   Account
-                </li>
-                <li class="top-nav-item dropdown-link  d-md-none">
+                </li> -->
+                <li class="top-nav-item dropdown-link">
                   <i class="far fa-user-circle" aria-hidden="true"></i>
                   <span class="visually-hidden">My account</span>
               </li>
               <li>
-                <a href="{% url 'view_bag' %}" class="top-nav-item d-none d-md-block">
-                  Bag
+                <a href="{% url 'view_bag' %}" class="top-nav-item">
+                  
                   {% if item_count %}
                   <span class="bag-notification">
                     {{ item_count }}
@@ -80,7 +72,7 @@
                   {% endif %}
                 </a>
               </li>
-              <li class="d-md-none">
+              <li>
                 <a href="{% url 'view_bag' %}" class="top-nav-item">
                   <i class="fas fa-shopping-bag" aria-hidden="true"></i>
                   {% if item_count %}

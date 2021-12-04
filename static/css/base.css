@@ -703,7 +703,7 @@ select option[value=""] {
     position: absolute;
     width: 150px;
     height: 340%;
-    background: linear-gradient(#60d02c, #582DD2);
+    background: linear-gradient(#60d02c, #190E5F);
     animation: animate 4s linear infinite;
 }
 
@@ -745,7 +745,7 @@ select option[value=""] {
     position: absolute;
     width: 150px;
     height: 340%;
-    background: linear-gradient(#D02C75, #582DD2);
+    background: linear-gradient(#60d02c, #582DD2);
     animation: animate 4s linear infinite;
 }
 
