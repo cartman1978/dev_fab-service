@@ -120,9 +120,9 @@ Reviews
                             </a>
                             {% endif %}
                             {% if page_obj.has_next %}
-                            <a href="?page={{ page_obj.next_page_number }}&sort={{ sort }}&direction={{ direction }}">Next
+                            <a class="edit-link" href="?page={{ page_obj.next_page_number }}&sort={{ sort }}&direction={{ direction }}">Next
                                 &raquo;</a>
-                            <a href="?page={{ page_obj.paginator.num_pages }}&sort={{ sort }}&direction={{ direction }}">Last
+                            <a class="edit-link" href="?page={{ page_obj.paginator.num_pages }}&sort={{ sort }}&direction={{ direction }}">Last
                                 &raquo;
                             </a>
                             {% endif %}
