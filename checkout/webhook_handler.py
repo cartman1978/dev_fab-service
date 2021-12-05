@@ -155,4 +155,4 @@ Verified order is in database.", status=200)
         self._send_order_confirmation(order)
         return HttpResponse(
             content=f"Webhook recieved : {event['type']} | \
- SUCCESS: Created order in webhook", status=200)
+SUCCESS: Created order in webhook", status=200)
