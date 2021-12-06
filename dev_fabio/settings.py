@@ -23,7 +23,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'l6(eswe%)-76_6*wd211e#m1qbjgn!+0n$2k@
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "DEVELOPMENT" in os.environ
-
+DEBUG = True
 ALLOWED_HOSTS = ['devfab.herokuapp.com', 'localhost']
 
 
@@ -111,6 +111,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -184,7 +185,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-SITE_ID = 1
 
 
 if 'USE_AWS' in os.environ:
