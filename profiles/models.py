@@ -4,6 +4,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 from django_countries.fields import CountryField
+from django.core.exceptions import ObjectDoesNotExist
 
 
 class UserProfile(models.Model):
@@ -22,6 +23,8 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+    
+
 
 
 @receiver(post_save, sender=User)
