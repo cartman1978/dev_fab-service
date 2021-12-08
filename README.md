@@ -2,6 +2,25 @@
 
 - This project aims to build a full-stack web application using Django full-stack web framework, HTML, Css3, and javascript.
 
+  - This is an e-commerce web app for a fictional Web service Company.
+
+  - The application features e-commerce functionality, payment system using Stripe, user login, confirmation emails, CRUD functionality for Admin to add new items, and an admin section for the administrator to access database record.
+
+
+  ## Live project
+
+
+- [View the live project here.](https://devfab.herokuapp.com/)
+
+## Screenshots
+
+  - ### Landing page Home Page.
+
+<div align="center"><img src="readme-images/page-images/homepage.jpg" alt="image of the homepage hero section"></div>
+
+  - ### Landing page Shopping our service.
+
+<div align="center"><img src="readme-images/page-images/shopping.jpg" alt="image of the homepage shop by collection section"></div>
 
 ## Table of Contents.
 
@@ -18,14 +37,12 @@
 - [Features](#features)
     + [Homepage App.](#homepage-app)
     + [Service App](#service-app)
-    + [Cart App.](#cart-app)
+    + [Bag App.](#bag-app)
     + [Checkout app.](#checkout-app)
     + [Reviews app.](#reviews-app)
     + [Users app.](#users-app)
-    + [Wishlist app.](#wishlist-app)
-    + [Blog app.](#blog-app)
-- [Testing](#testing)
-    + [Testing.](#testing)
+    
+
 - [Technologies used.](#technologies-used)
   * [Languages Used.](#languages-used)
   * [Django, and Django extensions used](#django--and-django-extensions-used)
@@ -59,9 +76,9 @@
   
   - Shopping.
     - As a customer, I would like to see the product price and description.
-    - As a customer, I would like to be able to add products to my shopping cart.
+    - As a customer, I would like to be able to add products to my shopping bag.
     - As a customer, I would like to be notified when I complete interactions with the site.
-    - As a customer, I would like to be able to edit my shopping cart.
+    - As a customer, I would like to be able to edit my shopping bag.
     - As a customer, I would like to be able to checkout easily.
     - As a customer, I would like to receive confirmation of my order.
 
@@ -95,8 +112,6 @@
     - From Django Allauth containing the username, email, and password.
   - Userprofile
     - Model containing the user's details for future orders.
-  - Wishlist
-    - Contains a list of items that the user has liked.
 
 - Service
   - Items
@@ -116,11 +131,6 @@
   - Orderline item
     - Items for the customer order the quantity and total.
 
-- Blog
-  - Post
-    - Contains the blog post and details of its author and title.
-  - Comments
-    - Contains the comments for each post.
 
 
 - Database Diagram
@@ -157,6 +167,39 @@
   - All icons have been obtained from Font Awsome.
 
   
+  ## Features
+  
+- #### Homepage App.
+
+    - Home Page.
+        - Upon opening the site the user is greeted with the main home page section that defines the site as a web service store. 
+
+            - <p align="center"><img src="readme-images/page-images/homepage.jpg" alt="Image of home-page" height="180px" width="320px"/></p>
+        
+    - Interactive Nav
+
+        - The site then contains the navigation section accessed by clicking on the hamburger icon.
+        - The navigation also has an opaque background and a slight background blur to give it a modern glass feel.
+
+
+            - <p align="center"><img src="readme-images/page-images/navigation.jpg" alt="Image of navigation menu" height="250px" width="320px"/></p>
+        
+    - Review Section.
+
+        - The review section containing users review whit rating and comments.
+        - The user can click on the button to access all the reviews and can add or edit if is logged in.
+            - <p align="center"><img src="readme-images/page-images/review.jpg" alt="Image of new items slider" height="80px" width="400px"/></p>
+        
+    - Newsletter
+
+        - The homepage contains a section where the user can sign up for a newsletter.
+        - Their email address will then be stored in the database and they will be sent a confirmation email.
+            - <p align="center"><img src="readme-images/page-images/newsletter.jpg" alt="Image of blog on landing page" height="60px" width="450px"/></p>
+    
+#### Service App
+
+    - Service Category
+        -       
 
   ## Technologies used.
 
