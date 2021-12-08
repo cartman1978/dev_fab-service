@@ -40,7 +40,7 @@
     + [Bag App.](#bag-app)
     + [Checkout app.](#checkout-app)
     + [Reviews app.](#reviews-app)
-    + [Users app.](#users-app)
+    + [Profile app.](#profile-app)
     
 
 - [Technologies used.](#technologies-used)
@@ -243,6 +243,43 @@
         - After the order has been confirmed the user is then directed to the order confirmation page.
         - A confirmation email will also be sent to the user.
             -  <p align="center"><img src="readme-images/page-images/order-confirmation.jpg" alt="Image of order confirmation" height="150px" width="500px"/></p>
+
+
+- #### Reviews app.
+    - Reviews page.
+        - From the reviews section in the user can navigate to the review page.
+        - In the revie page they can see all the reviews left by other users.
+        - If they aren't logged in they will see a notification to log in or sign up to leave a review.
+            - <p align="center"><img src="readme-images/page-images/review-page.jpg" alt="Image of reviews page" height="150px" width="500px"/></p>
+        
+        - If the user is logged in they will see a form section to leave a review.
+        - Once the form is submitted it will appear in the reviews section with their username.
+        - If the current user is the owner of a review they will be given the option to edit or delete the review.
+
+            -  <p align="center"><img src="readme-images/page-images/add-review.jpg" alt="Image of review form" height="270px" width="300px"/></p>
+
+
+- #### Profile app.
+   
+    - Signup 
+        - If the user isn't signed up they can click the signup link and be brought to the signup page.
+        - Than they can fill in the signup form to signup.
+        - The page also has a link to the login in case a user that has already been signed up.
+            -  <p align="center"><img src="readme-images/page-images/signup.jpg" alt="Image of signup form" height="270px" width="500px"/></p>
+    
+    - Login
+        - User can now use the login feature.
+        - They can fill out their login details.
+        - There is also a link to the signin form in case a user has navigated here who hasn't signed up yet.
+            -  <p align="center"><img src="readme-images/page-images/login.jpg" alt="Image of login form" height="270px" width="500px"/></p>
+    
+    - Profile page.
+        - The user's profile page will hold the users shipping details for ease of shopping in future.
+        - It also has a reference to the users past orders.
+            -  <p align="center"><img src="readme-images/page-images/profile.jpg" alt="Image of previous order numbers" height="150px" width="500px"/></p>
+
+        - When the user clicks on the order number, they are brought to that previous order page where they can see details of the previous order.
+            -  <p align="center"><img src="readme-images/page-images/prev-order.jpg" alt="Image of review form" height="150px" width="550px"/></p>
 
   ## Technologies used.
 
