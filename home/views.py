@@ -24,7 +24,7 @@ def home(request):
             send_mail(
                 subject,
                 body,
-                settings.DEFAULT_EMAIL_ADDRESS,
+                settings.DEFAULT_FROM_EMAIL,
                 [subscribers_email]
             )
             messages.success(request,
