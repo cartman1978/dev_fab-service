@@ -196,10 +196,53 @@
         - Their email address will then be stored in the database and they will be sent a confirmation email.
             - <p align="center"><img src="readme-images/page-images/newsletter.jpg" alt="Image of blog on landing page" height="60px" width="450px"/></p>
     
-#### Service App
+- #### Service App
+
+    - All Service Category
+
+        - The all service view shows all the category available in the store.
+        - Then when user click on the single service categegory will redirect to the specif category.
+
+          - <p align="center"><img src="readme-images/page-images/category.jpg" alt="Image of all items view" height="140px" width="400px"/></p>
 
     - Service Category
-        -       
+        - The user can then view the items available for the specific category selected.
+
+          - <p align="center"><img src="readme-images/page-images/service-category.jpg" alt="Image of items selector" height="140px" width="400px"/></p>    
+
+    - Item page.
+        - The item page then consists of the items details with a quantity selector and an add to bag button.
+        - It also has a link back to the items page so the user can continue shopping.
+
+          -  <p align="center"><img src="readme-images/page-images/item-page.jpg" alt="Image of item page" height="140px" width="350px"/></p>   
+
+
+    - #### Bag App.
+    - Add to Bag.
+        - The user has the option to add items to the bag from the item page.
+        - When the user clicks this button the item will be placed into the bag. 
+        - A message showing that the item has been placed in the bag with a list of bag items.
+        - The bag navigation item will then show a button showing the number of items in the user's cart.
+            -  <p align="center"><img src="readme-images/page-images/add-to-bag.jpg" alt="Image of add to cart message" height="150px" width="420px"/></p>
+    
+    - Bag Page.
+        - The bag page shows the users the items in their bag.
+        - The user can then adjust the quantity of each item, or delete the item from the bag.
+        - The bag also shows the total price the user.
+        - If the user wishes to continue shopping there is a link to the items page.
+            -  <p align="center"><img src="readme-images/page-images/bag.jpg" alt="Image of cart page" height="150px" width="500px"/></p>
+
+
+- #### Checkout app.
+    - Checkout page.
+        - Once the user decide to buy can go to the checkout page.
+        - Here they are shown the checkout form and a list of their bag items with total amount.
+            -  <p align="center"><img src="readme-images/page-images/checkout.jpg" alt="Image of checkout page" height="150px" width="500px"/></p>
+    
+    - Order confirmation page.
+        - After the order has been confirmed the user is then directed to the order confirmation page.
+        - A confirmation email will also be sent to the user.
+            -  <p align="center"><img src="readme-images/page-images/order-confirmation.jpg" alt="Image of order confirmation" height="150px" width="500px"/></p>
 
   ## Technologies used.
 
