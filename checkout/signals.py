@@ -16,4 +16,3 @@ def update_total_on_delete(sender, instance, **kwargs):
     ''' Update total when a lineitem is deleted '''
 
     instance.order.update_grand_total()
-

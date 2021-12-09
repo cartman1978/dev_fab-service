@@ -22,6 +22,7 @@ class Category(models.Model):
         """ Function to return display name"""
         
         return self.display_name
+
     
 class Item(models.Model):
     code = models.CharField(max_length=150,

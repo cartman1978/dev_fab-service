@@ -36,13 +36,11 @@ def single_item(request, item_id):
 
     item = get_object_or_404(Item, pk=item_id)
 
-
     context = {
         "item": item
     }
 
     return render(request, 'services/single_service.html', context)
-
 
 
 @login_required
@@ -57,7 +55,7 @@ def add_item(request):
         if form.is_valid():
             item = form.save()
             messages.success(request, 'Item successfully added!')
-            return redirect(reverse('single_item', args=[item.id] ))
+            return redirect(reverse('single_item', args=[item.id]))
         else:
             messages.error(request, 'Failed to add Item. Please try again')
     else:
@@ -86,7 +84,8 @@ def edit_item(request, item_id):
             messages.success(request, 'Service update successfully!')
             return redirect(reverse('single_item', args=[item.id]))
         else:
-            messages.error(request, 'Failed to update service. Please try again!')
+            messages.error(request, 'Failed to update service. \
+                           Please try again!')
     else:
         form = ItemForm(instance=item)
         messages.info(request, f'You are editing {item.name}')

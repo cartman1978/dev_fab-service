@@ -4,6 +4,7 @@ from services.models import Item
 from decimal import Decimal
 from services.models import Item
 
+
 def bag_contents(request):
     
     bag_items = []

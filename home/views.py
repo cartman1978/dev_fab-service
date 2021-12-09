@@ -7,7 +7,6 @@ from profiles.models import UserProfile
 
 from .forms import NewsletterForm, MessageForm
 
-# Create your views here.
 
 def home(request):
     """ A view to return index page """
@@ -29,12 +28,12 @@ def home(request):
                 [subscribers_email]
             )
             messages.success(request,
-                            "You have been signed up for our newsletter")
+                             "You have been signed up for our newsletter")
             
             return redirect("home")
         else:
             messages.error(request,
-                        "Something has gone wrong.\
+                           "Something has gone wrong.\
                             Please check your email address and try again.")
             return redirect("home")
     else:
@@ -48,27 +47,27 @@ def home(request):
     }
 
     return render(request,
-                template,
-                context)
-    
+                  template,
+                  context)
     
     
 def contact(request):
-     ''' renders the contact us page '''
-     if request.method == "POST":
+    ''' renders the contact us page '''
+    if request.method == "POST":
         form = MessageForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request,
-                            "Your message has been sent.\
-                            Someone from our customer service team will be in contact soon.")
+                             "Your message has been sent.\
+                            Someone from our customer service team\
+                            will be in contact soon.")
             return redirect("home")
         else:
             messages.error(request,
-                            "Something has gone wrong.\
-                            Please try again soon")
+                           "Something has gone wrong.\
+                           Please try again soon")
             return redirect("contact")
-     else:
+    else:
         if request.user.is_authenticated:
             try:
                 user_profile = UserProfile.objects.get(user=request.user)
@@ -80,11 +79,11 @@ def contact(request):
         else:
             form = MessageForm()
 
-     template = "home/contact.html"
-     context = {
+    template = "home/contact.html"
+    context = {
         "form": form,
     }
 
-     return render(request,
+    return render(request,
                   template,
                   context)

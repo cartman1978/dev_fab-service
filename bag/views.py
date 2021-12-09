@@ -17,17 +17,16 @@ def add_to_bag(request, item_id):
         quantity = int(request.POST.get('quantity'))
         redirect_url = request.POST.get('redirect_url')
         bag = request.session.get('bag', {})
-    
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
         messages.success(request,
-                        f"Updated {item.name} \
-                            quantity to {bag[item_id]}")
+                         f"Updated {item.name} \
+                         quantity to {bag[item_id]}")
     else:
         bag[item_id] = quantity
         messages.success(request,
-                            f"{item.name} \
-                            has been added to your bag.")
+                         f"{item.name} \
+                         has been added to your bag.")
         
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -44,13 +43,13 @@ def update_bag(request, item_id):
         if quantity > 0:
             bag[item_id] = quantity
             messages.success(request,
-                            f"Updated {item.name} \
-                            quantity to {bag[item_id]}.")
+                             f"Updated {item.name} \
+                             quantity to {bag[item_id]}.")
         else:
             bag.pop(item_id)
             messages.success(request,
-                            f"Removed {item.name} \
-                            from your bag.")
+                             f"Removed {item.name} \
+                             from your bag.")
         request.session["bag"] = bag
         return redirect(reverse("view_bag"))
 
@@ -64,8 +63,8 @@ def remove_bag(request, item_id):
             
             bag.pop(item_id)
             messages.success(request,
-                            f"Removed {item.name} \
-                            from your bag.")
+                             f"Removed {item.name} \
+                             from your bag.")
                 
             request.session["bag"] = bag
             return HttpResponse(status=200)   

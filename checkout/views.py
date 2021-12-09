@@ -1,4 +1,7 @@
-from django.shortcuts import get_object_or_404, render, redirect, reverse, HttpResponse
+from django.shortcuts import (get_object_or_404,
+                              render, redirect,
+                              reverse, 
+                              HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -77,14 +80,15 @@ def checkout(request):
                             order_line_item.save()
                 except Item.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the item wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
             
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success', 
+                                    args=[order.order_number]))
         else:
             messages.error(request, 'Opps, there is an error with your form. \
                             Please double check your information')
@@ -100,11 +104,10 @@ def checkout(request):
         stripe_total = round(total * 100)
         stripe.api_key = settings.STRIPE_SECRET_KEY
         intent = stripe.PaymentIntent.create(
-            amount = stripe_total, 
-            currency = settings.STRIPE_CURRENCY,
+            amount=stripe_total, 
+            currency=settings.STRIPE_CURRENCY,
         )
         
-        # Attempt to prefill the form with any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -124,11 +127,9 @@ def checkout(request):
         else:
             order_form = OrderForm()
         
-    
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
-    
     
     template = 'checkout/checkout.html'
     context = {
