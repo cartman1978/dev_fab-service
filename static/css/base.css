@@ -1419,9 +1419,7 @@ td p {
 }
 
 @media (min-width: 992px) {
-    .logo {
-        font-size: rem;
-    }
+  
     .newsletter-form input {
         width: 65%;
         height: 4rem;
