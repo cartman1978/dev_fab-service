@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Contact
+{% endblock %}
+{% block main_content %}
+<div class="container page-container">
+    <div class="row">
+        <div class="col flex-center page-heading">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form id="contact-form" class="m-auto" action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="bag-links d-flex">
+                <button type="submit" class="service-checkout-shop flex-center m-auto" id="contact-submit">Contact Us</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
