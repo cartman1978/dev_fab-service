@@ -348,6 +348,16 @@ button {
     display: none;
 }
 
+.side-logo {
+    background: url(/media/logdev.jpg) no-repeat center center;
+    background-size: cover;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: -0.5rem;
+    left: 9rem;
+}
+
 .text-shadow {
     text-shadow: 0.5rem 0.5rem 0.8rem rgb(60 60 33 / 68%);
     color: #fff
@@ -1383,6 +1393,7 @@ td p {
         color: #EDEDE9;
         text-decoration: none;
         margin-left: 10rem;
+        position: relative;
     }
     .side-nav {
         width: 37rem;
