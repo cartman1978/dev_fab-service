@@ -839,7 +839,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 ### Code.
 
 - #### Kevin Powell Youtube video.
-    - [Fade + slide in nav list items one at a time](https://www.youtube.com/watch?v=xkKjrH3pRfg&list=WL&index=3&t=1028s)
+    - [Fade + slide in nav list items one at a time](https://www.youtube.com/watch?v=xkKjrH3pRfg&list=WL&index=4&t=1028s)
         - Thanks to this youtube that help me to design and animate my navigatio menu.
 
 - #### Online Tutorials Youtube video.
