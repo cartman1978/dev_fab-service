@@ -833,3 +833,24 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
       - ```
             python manage.py runserver
         ```
+
+## Credits. 
+
+### Code.
+
+- #### Kevin Powell Youtube video.
+    - [Fade + slide in nav list items one at a time](https://www.youtube.com/watch?v=xkKjrH3pRfg&list=WL&index=3&t=1028s)
+        - Thanks to this youtube that help me to design and animate my navigatio menu.
+
+- #### Online Tutorials Youtube video.
+    - [Awesome + css border animation](https://www.youtube.com/watch?v=LYgQXOV-x24)
+        - This youtube walkthrough help me to design and animate the service box to my main page. I've adapted the code to suit my site.
+  ### Media
+
+- [Unsplash](https://unsplash.com/)
+    - All images for the website were obtained from Unsplash. 
+
+  ### Acknowledgements    
+  
+  * Special thanks to my mentor **Simen Daehlin**, for is help and support throughout the project.
+  

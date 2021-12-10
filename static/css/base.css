@@ -225,7 +225,7 @@ button {
     border-width: 0;
 }
 
-/* Code from Kevin powell on youtube to animate the navigation details in readme file */
+/* Code from Kevin powell on youtube  */
 
 @keyframes fadeOut {
     0% {
@@ -293,18 +293,6 @@ button {
 
 .side-menu-open li:nth-child(6) {
     animation-delay: 300ms;
-}
-
-.side-menu-open li:nth-child(7) {
-    animation-delay: 350ms;
-}
-
-.side-menu-open li:nth-child(8) {
-    animation-delay: 400ms;
-}
-
-.side-menu-close li:nth-child(7) {
-    animation-delay: 50ms;
 }
 
 .side-menu-close li:nth-child(6) {
@@ -617,11 +605,8 @@ select option[value=""] {
     font-size: 1.8rem;
 }
 
-/* Stripe */
 
-
-
-/* -------------- */
+/* Code from On line Tutorials on youtube */
 
 .box-service-1 {
     background-color: #F3812F;
