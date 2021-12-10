@@ -64,10 +64,6 @@
        - As a customer, I would like to be able to navigate the website easily.
        - As a customer, I would like to see some information about the company.
        - As a customer, I would like to be able to contact the company.
-
-  - Searching for items.
-    - As a customer, I would like to see all the products the company sells.
-    - As a customer, I would like to be able to search by category.
   
   - Shopping.
     - As a customer, I would like to see the product price and description.
