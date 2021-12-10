@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'l6(eswe%)-76_6*wd211e#m1qbjgn!+0n$2k@rggi4+7kgte9(')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "DEVELOPMENT" in os.environ
@@ -86,7 +86,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.context.bag_contents',
@@ -138,9 +138,8 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
-
 
 
 # Password validation
@@ -188,7 +187,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
 if 'USE_AWS' in os.environ:
     
     # Cache control
@@ -225,9 +223,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51HTibYKKfQej5WyLgCJK7monNBPCYZjPlh1Ct2DMnbewd12uqOEpbaBjgHOjr7ozzYJcVdNfhYcxEh47lCCE0Pho0022hS3ROM')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51HTibYKKfQej5WyLh93yPT63crGEe2LSIHnBCic6y8Pser68X4w83vpeZ26jcnJKFHGfb3IkpwKONLoHcSHeLfD600sDBZryXS')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_J5qQTYeuqAOd2634QCSClm7Qmuk483C8')
 
 
 if 'DEVELOPMENT' in os.environ:
